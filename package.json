@@ -1,0 +1,11 @@
+{
+  "name": "zahin-portfolio",
+  "version": "1.0.0",
+  "description": "Personal portfolio website for Zahin Azri.",
+  "scripts": {
+    "start": "open src/index.html",
+    "build": "echo 'No build step defined.'"
+  },
+  "author": "Zahin Azri",
+  "license": "MIT"
+}
