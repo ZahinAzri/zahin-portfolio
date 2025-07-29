@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zahin Azri - UI/UX Designer</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noxlock&family=Rubik+Dots&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-[#080808]">
+
+    <div id="preloader">
+        <h1 class="text-4xl font-bold"><span id="preloader-counter">0</span>%</h1>
+    </div>
+
+    <div id="main-content" class="content-hidden">
+        <header class="py-4 fixed top-0 left-0 right-0 z-30">
+            <div class="px-8 md:px-[100px] relative">
+                <nav class="glassy rounded-full relative flex justify-center items-center md:grid md:grid-cols-3 p-4">
+                    <a data-scroll-to="#home" href="#" class="font-noxlock text-4xl tracking-wider md:justify-self-start cursor-pointer">ZA</a>
+                    <div class="hidden md:flex items-center space-x-8 justify-self-center">
+                        <a data-scroll-to="#home" class="nav-link">Home</a>
+                        <a data-scroll-to="#portfolio" class="nav-link">Portfolio</a>
+                        <a data-scroll-to="#about" class="nav-link">About</a>
+                        <a data-scroll-to="#contact" class="nav-link">Contact</a>
+                    </div>
+                    <div class="hidden md:block justify-self-end"></div>
+                    <div class="md:hidden absolute right-6 top-1/2 -translate-y-1/2">
+                        <button id="menu-btn" class="text-white focus:outline-none">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                        </button>
+                    </div>
+                </nav>
+                <div id="mobile-menu" class="hidden md:hidden absolute top-full right-8 mt-2 w-auto glassy rounded-[25px] py-[25px] px-[50px]">
+                    <a data-scroll-to="#home" class="mobile-nav-link block text-lg py-2 text-center">Home</a>
+                    <a data-scroll-to="#portfolio" class="mobile-nav-link block text-lg py-2 text-center">Portfolio</a>
+                    <a data-scroll-to="#about" class="mobile-nav-link block text-lg py-2 text-center">About</a>
+                    <a data-scroll-to="#contact" class="mobile-nav-link block text-lg py-2 text-center">Contact</a>
+                </div>
+            </div>
+        </header>
+        
+        <main data-scroll-container>
+            <section id="home" data-scroll-section class="relative min-h-screen hero-gradient flex flex-col justify-center">
+                <div class="px-8 md:px-[100px]">
+                    <div class="text-center md:text-left pb-24">
+                        <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                            <span class="border-2 border-[#D55A21] bg-[#D55A21]/[0.3] text-[#D55A21] text-sm md:text-base rounded-full px-[25px] py-[5px] font-medium">UI/UX Designer</span>
+                            <span class="border-2 border-[#D55A21] bg-[#D55A21]/[0.3] text-[#D55A21] text-sm md:text-base rounded-full px-[25px] py-[5px] font-medium">Creative Designer</span>
+                            <span class="border-2 border-[#D55A21] bg-[#D55A21]/[0.3] text-[#D55A21] text-sm md:text-base rounded-full px-[25px] py-[5px] font-medium">Prototyping</span>
+                        </div>
+                        <h1 class="font-bold text-5xl md:text-7xl leading-tight max-w-4xl">
+                            Hi, I'm <span class="text-[#D55A21]">Zahin Azri</span> <br> 
+                            <div id="flashlight-wrapper" class="relative hidden md:inline-block flashlight-wrapper">
+                                <span id="flashlight-text" class="flashlight">UI/UX Designer</span>
+                            </div>
+                            <span class="inline md:hidden">UI/UX Designer</span>
+                        </h1>
+                        <p class="mt-6 text-xl md:text-2xl text-gray-300 font-light">
+                            Specialize in user-centered design, transforming complex problems into elegant and effective solutions. I am now seeking a challenging role where I can contribute to innovative projects and continue to grow my skills.
+                        </p>
+                    </div>
+                </div>
+                <div class="absolute bottom-[72px] left-1/2 -translate-x-1/2 z-10">
+                    <div class="scroll-indicator">
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="portfolio" data-scroll-section class="py-24 sm:py-32">
+                <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                    <h2 class="text-4xl font-bold">My Portfolio</h2>
+                    <p class="mt-4 text-lg text-gray-400">My design journey so far</p>
+                    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
+                        <a href="#" class="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4">
+                            <div class="bg-zinc-900 rounded-[10px] overflow-hidden mb-6">
+                                <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Mockup" alt="Pcari Booking Mockup" class="w-full h-auto">
+                            </div>
+                            <h3 class="text-2xl font-medium px-2">Pcari Booking</h3>
+                            <p class="mt-2 text-gray-400 font-light px-2">Manage Pcari bookings for a merchant, which includes the main page and the merchant's dashboard.</p>
+                            <span class="mt-4 inline-block text-[#D55A21] px-2">View Case Study &rarr;</span>
+                        </a>
+                        <a href="#" class="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4">
+                            <div class="bg-zinc-900 rounded-[10px] overflow-hidden mb-6">
+                                <img src="https://placehold.co/600x400/1a1a1a/ffffff?text=Project+Mockup+2" alt="Another Project Mockup" class="w-full h-auto">
+                            </div>
+                            <h3 class="text-2xl font-medium px-2">Another Project</h3>
+                            <p class="mt-2 text-gray-400 font-light px-2">A description of another successful project, highlighting different skills and outcomes.</p>
+                            <span class="mt-4 inline-block text-[#D55A21] px-2">View Case Study &rarr;</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="about" data-scroll-section class="py-24 sm:py-32 px-8 md:px-[100px]">
+                <div class="max-w-3xl mx-auto text-center mb-24">
+                     <h2 class="text-4xl font-bold mb-4">About</h2>
+                     <p class="text-lg text-gray-300 leading-relaxed">
+                        UI/UX Designer building intuitive experiences by bridging user needs with clean design. My focus is on user-centered problem solving and a deep appreciation for craft.
+                     </p>
+                </div>
+
+                <div class="mt-24">
+                    <div class="text-center mb-16">
+                        <h2 class="text-4xl font-bold">My journey</h2>
+                        <div class="relative inline-block flashlight-wrapper">
+                            <span class="flashlight text-4xl font-bold hidden md:inline-block">so far</span>
+                            <span class="text-4xl font-bold inline-block md:hidden">so far</span>
+                        </div>
+                    </div>
+                    
+                    <div class="relative max-w-4xl mx-auto">
+                        <div class="absolute top-0 left-4 md:left-1/2 -translate-x-1/2 h-full w-0.5 timeline-line"></div>
+                        <div class="space-y-12">
+                            <div class="relative pl-12 md:grid md:grid-cols-2 md:gap-8">
+                                <div class="md:text-right md:pr-8"></div>
+                                <div>
+                                    <h3 class="text-xl font-bold">UI/UX Designer</h3>
+                                    <p class="text-md text-gray-400">Junior Executive</p>
+                                    <p class="text-sm text-gray-500 mt-1">RF Interactive Laiyon - 2025</p>
+                                </div>
+                            </div>
+                            <div class="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-8">
+                                <div class="md:text-right md:pr-8">
+                                    <h3 class="text-xl font-bold">UI/UX Designer</h3>
+                                    <p class="text-md text-gray-400">Internship</p>
+                                    <p class="text-sm text-gray-500 mt-1">RF Interactive Laiyon - 2024</p>
+                                </div>
+                                <div></div>
+                            </div>
+                            <div class="relative pl-12 md:grid md:grid-cols-2 md:gap-8">
+                                <div></div>
+                                <div>
+                                    <div class="absolute left-4 md:left-1/2 -translate-x-1/2 -bottom-2 w-5 h-5 bg-white rounded-full border-4 border-[#080808]"></div>
+                                    <h3 class="text-xl font-bold">Bachelor Degree Informatic Media</h3>
+                                    <p class="text-md text-gray-400">Student</p>
+                                    <p class="text-sm text-gray-500 mt-1">Unisza, Besut - 2021-2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" data-scroll-section class="py-32 sm:py-48 relative overflow-hidden px-4">
+                <div class="absolute inset-0 flex items-center justify-center z-0 pointer-events-none">
+                    <h1 class="font-dotspot text-[20vw] lg:text-[15vw] text-gray-500/10 whitespace-nowrap">CONTACT ME</h1>
+                </div>
+                <div class="relative z-10 max-w-xl mx-auto">
+                    <form class="glassy p-8 md:p-12 rounded-3xl">
+                        <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+                        <div class="space-y-6">
+                            <div>
+                                <label for="name" class="text-sm font-medium text-gray-300">Name</label>
+                                <input type="text" id="name" name="name" class="mt-1 block w-full bg-gray-800/50 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#D55A21]">
+                            </div>
+                            <div>
+                                <label for="email" class="text-sm font-medium text-gray-300">Email</label>
+                                <input type="email" id="email" name="email" class="mt-1 block w-full bg-gray-800/50 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#D55A21]">
+                            </div>
+                            <div>
+                                <label for="description" class="text-sm font-medium text-gray-300">Description</label>
+                                <textarea id="description" name="description" rows="4" class="mt-1 block w-full bg-gray-800/50 border border-gray-700 rounded-md py-2 px-3 text-white focus:outline-none focus:ring-2 focus:ring-[#D55A21]"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="bg-white text-black font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-colors duration-300">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
