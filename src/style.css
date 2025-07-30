@@ -5,6 +5,11 @@
   initial-value: 0.1; /* Start with 10% opacity */
 }
 
+@font-face {
+    font-family: 'DotSpot';
+    src: url(../assets/font/DotSpot-Regular.woff2) format('woff2');
+}
+
 /* Base Styles */
 body {
     font-family: 'Satoshi', sans-serif;
@@ -21,18 +26,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: opacity 0.5s ease-out;
 }
-#preloader.hidden {
-    opacity: 0;
-    pointer-events: none;
+.preloader-logo path {
+    /* Set up for the stroke animation */
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
 }
 .content-hidden {
     opacity: 0;
-    transition: opacity 0.5s ease-in;
-}
-.content-visible {
-    opacity: 1;
 }
 
 /* Locomotive Scroll Fixes */
@@ -71,7 +72,7 @@ body {
     font-family: 'Noxlock', sans-serif;
 }
 .font-dotspot {
-    font-family: 'Rubik Dots', sans-serif;
+    font-family: 'DotSpot', sans-serif;
 }
 
 /* Hero Background Gradient */
@@ -122,8 +123,8 @@ body {
 
 /* --- Flashlight Effect Styles --- */
 .flashlight-wrapper {
-    padding: 1rem;
-    margin: -1rem;
+    padding: 5rem;
+    margin: -5rem;
 }
 .flashlight {
     background: radial-gradient(
@@ -165,4 +166,9 @@ body {
 /* --- Timeline Line Fade Effect --- */
 .timeline-line {
     background: linear-gradient(to top, #6b7280, transparent);
+}
+        
+/* --- Custom Cursor Styles --- */
+.project-card:hover {
+    cursor: none;
 }
