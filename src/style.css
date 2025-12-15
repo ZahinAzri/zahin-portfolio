@@ -1,8 +1,9 @@
 /* CSS Custom Properties for Animation */
 @property --light-opacity {
-  syntax: '<number>';
-  inherits: false;
-  initial-value: 0.1; /* Start with 10% opacity */
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0.1;
+    /* Start with 10% opacity */
 }
 
 @font-face {
@@ -27,11 +28,13 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .preloader-logo path {
     /* Set up for the stroke animation */
     stroke-dasharray: 1000;
     stroke-dashoffset: 1000;
 }
+
 .content-hidden {
     opacity: 0;
 }
@@ -39,22 +42,24 @@ body {
 /* Locomotive Scroll Fixes */
 .c-scrollbar {
     position: absolute;
-    right: 0; 
+    right: 0;
     top: 0;
     width: 11px;
     height: 100%;
-    transform-origin: center right; 
-    transition: transform .3s,opacity .3s;
+    transform-origin: center right;
+    transition: transform .3s, opacity .3s;
     opacity: 0;
 }
+
 .c-scrollbar:hover {
     transform: scaleX(1.45);
 }
+
 .c-scrollbar_thumb {
     position: absolute;
     top: 0;
-    right: 0; 
-    background-color: rgba(213, 90, 33, 0.7); 
+    right: 0;
+    background-color: rgba(213, 90, 33, 0.7);
     opacity: 0;
     width: 7px;
     border-radius: 10px;
@@ -63,7 +68,11 @@ body {
     cursor: grab;
     transition: opacity 0.3s ease;
 }
-.has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar, .has-scroll-scrolling .c-scrollbar_thumb, .has-scroll-dragging .c-scrollbar_thumb {
+
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar,
+.has-scroll-scrolling .c-scrollbar_thumb,
+.has-scroll-dragging .c-scrollbar_thumb {
     opacity: 1;
 }
 
@@ -71,6 +80,7 @@ body {
 .font-noxlock {
     font-family: 'Noxlock', sans-serif;
 }
+
 .font-dotspot {
     font-family: 'DotSpot', sans-serif;
 }
@@ -84,7 +94,7 @@ body {
     right: 0;
     height: 100vh;
     background: radial-gradient(ellipse at top left, rgba(213, 90, 33, 0.25), transparent 70%),
-                radial-gradient(ellipse at bottom right, rgba(88, 28, 135, 0.60), transparent 70%);
+        radial-gradient(ellipse at bottom right, rgba(88, 28, 135, 0.60), transparent 70%);
     z-index: -1;
 }
 
@@ -98,41 +108,69 @@ body {
 
 /* --- Navigation Link Styles --- */
 .nav-link {
-    font-weight: 400;
+    font-weight: 500;
     color: #FFFFFF;
-    transition: all 0.3s ease;
-    padding-bottom: 4px;
-    border-bottom: 2px solid transparent;
+    transition: color 0.3s ease;
+    padding: 8px 20px;
+    border-radius: 9999px;
     cursor: pointer;
+    font-size: 0.95rem;
 }
+
+/* Active state is now handled by the marker, so we only need to ensure text contrast if needed, 
+   but since both active and inactive are on dark/orange, white is fine. 
+   We keep the class for JS selection logic but remove the direct background styling. */
 .nav-link.nav-active {
     font-weight: 700;
-    color: #D55A21;
-    border-bottom-color: #D55A21;
+    color: #FFFFFF;
 }
+
+#nav-marker {
+    /* Initial state hidden or set by JS */
+    opacity: 0;
+}
+
+.nav-link.nav-active~#nav-marker,
+/* If JS fails for some reason, this sibling selector strategy won't work well 
+   because links are siblings. Relies on JS. */
+#nav-marker.visible {
+    opacity: 1;
+}
+
 .mobile-nav-link {
     color: #FFFFFF;
     font-weight: 400;
     transition: color 0.3s ease;
     cursor: pointer;
 }
+
 .mobile-nav-link.mobile-nav-active {
     color: #D55A21;
     font-weight: 700;
 }
+
+/* --- Service Card Styles --- */
+/* Base styles handled by Tailwind classes in HTML, specifically bg, rounded, border, transition */
+.service-card:hover {
+    border-color: #D55A21;
+    /* Optional: Remove transform if the reference image looks static, but subtle lift is usually nice. 
+       Keeping typical user preference for 'glow' usually implies some depth, but 'border' is priority. */
+    transform: translateY(-5px);
+}
+
+/* Icon color change handles via group-hover in Tailwind */
 
 /* --- Flashlight Effect Styles --- */
 .flashlight-wrapper {
     padding: 5rem;
     margin: -5rem;
 }
+
 .flashlight {
-    background: radial-gradient(
-        circle at var(--x, 50%) var(--y, 50%),
-        rgba(255, 255, 255, var(--light-opacity)) 0%,
-        rgba(224, 224, 224, var(--light-opacity)) 15%,
-        rgba(224, 224, 224, 0.1) 40%
-    );
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
+            rgba(255, 255, 255, var(--light-opacity)) 0%,
+            rgba(224, 224, 224, var(--light-opacity)) 15%,
+            rgba(224, 224, 224, 0.1) 40%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -150,6 +188,7 @@ body {
     align-items: flex-start;
     padding-top: 6px;
 }
+
 .scroll-dot {
     width: 8px;
     height: 8px;
@@ -157,17 +196,29 @@ body {
     border-radius: 50%;
     animation: scroll-animation 2s infinite;
 }
+
 @keyframes scroll-animation {
-    0% { opacity: 1; transform: translateY(0); }
-    50% { opacity: 1; transform: translateY(20px); }
-    100% { opacity: 0; transform: translateY(20px); }
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 }
 
 /* --- Timeline Line Fade Effect --- */
 .timeline-line {
     background: linear-gradient(to top, #6b7280, transparent);
 }
-        
+
 /* --- Custom Cursor Styles --- */
 .project-card:hover {
     cursor: none;
