@@ -1,0 +1,395 @@
+/* CSS Custom Properties for Animation */
+@property --light-opacity {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0.1;
+    /* Start with 10% opacity */
+}
+
+@font-face {
+    font-family: 'DotSpot';
+    src: url(../assets/font/DotSpot-Regular.woff2) format('woff2');
+}
+
+/* Base Styles */
+body {
+    font-family: 'Satoshi', sans-serif;
+    background-color: #080808;
+    color: #E0E0E0;
+}
+
+/* --- Preloader Styles --- */
+#preloader {
+    position: fixed;
+    inset: 0;
+    background-color: #080808;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.preloader-logo path {
+    /* Set up for the stroke animation */
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+}
+
+.content-hidden {
+    opacity: 0;
+}
+
+/* Locomotive Scroll Fixes */
+.c-scrollbar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 11px;
+    height: 100%;
+    transform-origin: center right;
+    transition: transform .3s, opacity .3s;
+    opacity: 0;
+}
+
+.c-scrollbar:hover {
+    transform: scaleX(1.45);
+}
+
+.c-scrollbar_thumb {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(213, 90, 33, 0.7);
+    opacity: 0;
+    width: 7px;
+    border-radius: 10px;
+    margin: 2px;
+    cursor: -webkit-grab;
+    cursor: grab;
+    transition: opacity 0.3s ease;
+}
+
+.has-scroll-scrolling .c-scrollbar,
+.has-scroll-dragging .c-scrollbar,
+.has-scroll-scrolling .c-scrollbar_thumb,
+.has-scroll-dragging .c-scrollbar_thumb {
+    opacity: 1;
+}
+
+/* Custom Font Classes */
+.font-noxlock {
+    font-family: 'Noxlock', sans-serif;
+}
+
+.font-dotspot {
+    font-family: 'DotSpot', sans-serif;
+}
+
+/* Hero Background Gradient */
+.hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: radial-gradient(ellipse at top left, rgba(213, 90, 33, 0.25), transparent 70%),
+        radial-gradient(ellipse at bottom right, rgba(88, 28, 135, 0.60), transparent 70%);
+    z-index: -1;
+}
+
+/* Glassy Effect */
+.glassy {
+    background: rgba(18, 23, 34, 0.5);
+    -webkit-backdrop-filter: blur(12px);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* --- Navigation Link Styles --- */
+.nav-link {
+    font-weight: 500;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+    padding: 8px 20px;
+    border-radius: 9999px;
+    cursor: pointer;
+    font-size: 0.95rem;
+}
+
+/* Active state is now handled by the marker, so we only need to ensure text contrast if needed, 
+   but since both active and inactive are on dark/orange, white is fine. 
+   We keep the class for JS selection logic but remove the direct background styling. */
+.nav-link.nav-active {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+#nav-marker {
+    /* Initial state hidden or set by JS */
+    opacity: 0;
+}
+
+.nav-link.nav-active~#nav-marker,
+/* If JS fails for some reason, this sibling selector strategy won't work well 
+   because links are siblings. Relies on JS. */
+#nav-marker.visible {
+    opacity: 1;
+}
+
+.mobile-nav-link {
+    color: #FFFFFF;
+    font-weight: 400;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.mobile-nav-link.mobile-nav-active {
+    color: #D55A21;
+    font-weight: 700;
+}
+
+/* --- Service Card Styles --- */
+/* Base styles handled by Tailwind classes in HTML, specifically bg, rounded, border, transition */
+.service-card:hover {
+    border-color: #D55A21;
+    /* Optional: Remove transform if the reference image looks static, but subtle lift is usually nice. 
+       Keeping typical user preference for 'glow' usually implies some depth, but 'border' is priority. */
+    transform: translateY(-5px);
+}
+
+/* Icon color change handles via group-hover in Tailwind */
+
+/* --- Flashlight Effect Styles --- */
+.flashlight-wrapper {
+    padding: 5rem;
+    margin: -5rem;
+}
+
+.flashlight {
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
+            rgba(255, 255, 255, var(--light-opacity)) 0%,
+            rgba(224, 224, 224, var(--light-opacity)) 15%,
+            rgba(224, 224, 224, 0.1) 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    transition: --light-opacity 0.3s ease-out;
+}
+
+/* --- Scroll Down Indicator --- */
+.scroll-indicator {
+    border: 2px solid white;
+    border-radius: 50px;
+    height: 50px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 6px;
+}
+
+.scroll-dot {
+    width: 8px;
+    height: 8px;
+    background-color: white;
+    border-radius: 50%;
+    animation: scroll-animation 2s infinite;
+}
+
+@keyframes scroll-animation {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}
+
+/* --- Timeline Line Fade Effect --- */
+.timeline-line {
+    background: linear-gradient(to top, #6b7280, transparent);
+}
+
+/* --- Custom Cursor Styles --- */
+.project-card:hover {
+    cursor: none;
+}
+
+/* --- Star Trail Animation --- */
+.trail-container {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    /* Shifted to the right side */
+    transform: translateY(-50%) scale(0.8);
+    width: 800px;
+    /* Kept sizing from previous vortex for consistency */
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.trail {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+/* The Core Glow */
+.trail-core {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.8) 0%, rgba(249, 115, 22, 0) 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: pulse-core 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+/* Ring 1 - Outer Dashed (The "Stars") */
+.trail-1 {
+    width: 340px;
+    height: 340px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    animation: spin-slow 60s linear infinite;
+}
+
+/* Ring 2 - The Main Orange Arc */
+.trail-2 {
+    width: 280px;
+    height: 280px;
+    border-top: 2px solid #f97316;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-shadow: 0 -10px 20px rgba(249, 115, 22, 0.4);
+    animation: spin-medium 8s linear infinite;
+}
+
+/* Ring 3 - The Secondary White Arc */
+.trail-3 {
+    width: 260px;
+    height: 260px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid transparent;
+    animation: spin-medium-rev 12s linear infinite;
+}
+
+/* Ring 4 - Fast Inner Spinner */
+.trail-4 {
+    width: 180px;
+    height: 180px;
+    border-left: 4px solid #f97316;
+    border-right: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    opacity: 0.7;
+    animation: spin-fast 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Ring 5 - The "Comet" Trail */
+.trail-5 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0%, transparent 80%, rgba(249, 115, 22, 0.6) 100%);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff calc(100% - 2px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff calc(100% - 2px));
+    animation: spin-fast 4s linear infinite;
+}
+
+/* Ring 6 - Outer Ghost Ring */
+.trail-6 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    animation: spin-slow 50s linear infinite reverse;
+}
+
+/* Ring 7 - Inner Tech Dotted */
+.trail-7 {
+    width: 150px;
+    height: 150px;
+    border: 2px dotted rgba(249, 115, 22, 0.3);
+    animation: spin-medium 20s linear infinite;
+}
+
+/* Ring 8 - Erratic Glitch Arc */
+.trail-8 {
+    width: 310px;
+    height: 310px;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    animation: spin-fast 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    /* erratic bounce */
+}
+
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-medium {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-medium-rev {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin-fast {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-core {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}

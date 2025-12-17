@@ -1,0 +1,25 @@
+/* [project]/src/app/dotspot_f2a8f338.module.css [app-client] (css) */
+@font-face {
+  font-family: dotSpot;
+  src: url("../media/DotSpot_Regular-s.p.c522a025.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: dotSpot Fallback;
+  src: local(Arial);
+  ascent-override: 94.51%;
+  descent-override: 23.48%;
+  line-gap-override: 0.0%;
+  size-adjust: 89.02%;
+}
+
+.dotspot_f2a8f338-module__QQneAa__className {
+  font-family: dotSpot, dotSpot Fallback;
+}
+
+.dotspot_f2a8f338-module__QQneAa__variable {
+  --font-dotspot: "dotSpot", "dotSpot Fallback";
+}
+
+/*# sourceMappingURL=src_app_dotspot_f2a8f338_module_css_bad6b30c._.single.css.map*/
