@@ -5,7 +5,39 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Search, PenTool, LayoutTemplate } from "lucide-react";
 import { Tools } from './Tools';
 
+
 export function About() {
+    const wrapperRef = React.useRef<HTMLDivElement>(null);
+    const textRef = React.useRef<HTMLSpanElement>(null);
+
+    React.useEffect(() => {
+        const wrapper = wrapperRef.current;
+        const text = textRef.current;
+
+        if (!wrapper || !text) return;
+
+        const handleMouseMove = (e: MouseEvent) => {
+            const rect = wrapper.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            text.style.setProperty('--x', `${(x / rect.width) * 100}%`);
+            text.style.setProperty('--y', `${(y / rect.height) * 100}%`);
+        };
+
+        const handleMouseEnter = () => text.style.setProperty('--light-opacity', '1');
+        const handleMouseLeave = () => text.style.setProperty('--light-opacity', '0.1');
+
+        wrapper.addEventListener('mousemove', handleMouseMove);
+        wrapper.addEventListener('mouseenter', handleMouseEnter);
+        wrapper.addEventListener('mouseleave', handleMouseLeave);
+
+        return () => {
+            wrapper.removeEventListener('mousemove', handleMouseMove);
+            wrapper.removeEventListener('mouseenter', handleMouseEnter);
+            wrapper.removeEventListener('mouseleave', handleMouseLeave);
+        };
+    }, []);
+
     return (
         <section id="about" data-scroll-section className="py-24 sm:py-32 px-8 md:px-[100px]">
             <div className="max-w-3xl mx-auto text-center mb-24">
@@ -68,8 +100,8 @@ export function About() {
             <div className="mt-24">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl font-bold">My journey</h2>
-                    <div className="relative inline-block flashlight-wrapper">
-                        <span className="flashlight text-4xl font-bold hidden md:inline-block">so far</span>
+                    <div ref={wrapperRef} className="relative inline-block flashlight-wrapper">
+                        <span ref={textRef} className="flashlight text-4xl font-bold hidden md:inline-block">so far</span>
                         <span className="text-4xl font-bold inline-block md:hidden">so far</span>
                     </div>
                 </div>
