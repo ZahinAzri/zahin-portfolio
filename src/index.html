@@ -151,8 +151,21 @@
         <main data-scroll-container>
             <!-- Home Section -->
             <section id="home" data-scroll-section
-                class="relative min-h-screen hero-gradient flex flex-col justify-center">
-                <div class="px-8 md:px-[100px]">
+                class="relative min-h-screen hero-gradient flex flex-col justify-center overflow-hidden">
+                <!-- Star Trail Animation -->
+                <div class="trail-container hidden md:flex">
+                    <div class="trail-core"></div>
+                    <div class="trail trail-1"></div>
+                    <div class="trail trail-2"></div>
+                    <div class="trail trail-3"></div>
+                    <div class="trail trail-4"></div>
+                    <div class="trail trail-5"></div>
+                    <div class="trail trail-6"></div>
+                    <div class="trail trail-7"></div>
+                    <div class="trail trail-8"></div>
+                </div>
+
+                <div class="px-8 md:px-[100px] relative z-10">
                     <div class="text-center md:text-left pb-24">
                         <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
                             <span

@@ -223,3 +223,173 @@ body {
 .project-card:hover {
     cursor: none;
 }
+
+/* --- Star Trail Animation --- */
+.trail-container {
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    /* Shifted to the right side */
+    transform: translateY(-50%) scale(0.8);
+    width: 800px;
+    /* Kept sizing from previous vortex for consistency */
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0.8;
+}
+
+.trail {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: all 0.5s ease;
+}
+
+/* The Core Glow */
+.trail-core {
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(249, 115, 22, 0.8) 0%, rgba(249, 115, 22, 0) 70%);
+    border-radius: 50%;
+    filter: blur(20px);
+    animation: pulse-core 4s ease-in-out infinite;
+    z-index: 0;
+}
+
+/* Ring 1 - Outer Dashed (The "Stars") */
+.trail-1 {
+    width: 340px;
+    height: 340px;
+    border: 1px dashed rgba(255, 255, 255, 0.2);
+    animation: spin-slow 60s linear infinite;
+}
+
+/* Ring 2 - The Main Orange Arc */
+.trail-2 {
+    width: 280px;
+    height: 280px;
+    border-top: 2px solid #f97316;
+    border-right: 2px solid transparent;
+    border-bottom: 2px solid transparent;
+    border-left: 2px solid transparent;
+    box-shadow: 0 -10px 20px rgba(249, 115, 22, 0.4);
+    animation: spin-medium 8s linear infinite;
+}
+
+/* Ring 3 - The Secondary White Arc */
+.trail-3 {
+    width: 260px;
+    height: 260px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid transparent;
+    animation: spin-medium-rev 12s linear infinite;
+}
+
+/* Ring 4 - Fast Inner Spinner */
+.trail-4 {
+    width: 180px;
+    height: 180px;
+    border-left: 4px solid #f97316;
+    border-right: 4px solid transparent;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    opacity: 0.7;
+    animation: spin-fast 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+}
+
+/* Ring 5 - The "Comet" Trail */
+.trail-5 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    background: conic-gradient(from 0deg, transparent 0%, transparent 80%, rgba(249, 115, 22, 0.6) 100%);
+    -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff calc(100% - 2px));
+    mask: radial-gradient(farthest-side, transparent calc(100% - 2px), #fff calc(100% - 2px));
+    animation: spin-fast 4s linear infinite;
+}
+
+/* Ring 6 - Outer Ghost Ring */
+.trail-6 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    animation: spin-slow 50s linear infinite reverse;
+}
+
+/* Ring 7 - Inner Tech Dotted */
+.trail-7 {
+    width: 150px;
+    height: 150px;
+    border: 2px dotted rgba(249, 115, 22, 0.3);
+    animation: spin-medium 20s linear infinite;
+}
+
+/* Ring 8 - Erratic Glitch Arc */
+.trail-8 {
+    width: 310px;
+    height: 310px;
+    border-left: 1px solid rgba(255, 255, 255, 0.6);
+    border-top: 1px solid transparent;
+    border-right: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    animation: spin-fast 5s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite;
+    /* erratic bounce */
+}
+
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-medium {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-medium-rev {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin-fast {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-core {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
