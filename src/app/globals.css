@@ -1,0 +1,352 @@
+@import "tailwindcss";
+
+@theme {
+    --color-border: hsl(var(--border));
+    --color-input: hsl(var(--input));
+    --color-ring: hsl(var(--ring));
+    --color-background: hsl(var(--background));
+    --color-foreground: hsl(var(--foreground));
+
+    --color-primary: hsl(var(--primary));
+    --color-primary-foreground: hsl(var(--primary-foreground));
+
+    --color-secondary: hsl(var(--secondary));
+    --color-secondary-foreground: hsl(var(--secondary-foreground));
+
+    --color-destructive: hsl(var(--destructive));
+    --color-destructive-foreground: hsl(var(--destructive-foreground));
+
+    --color-muted: hsl(var(--muted));
+    --color-muted-foreground: hsl(var(--muted-foreground));
+
+    --color-accent: hsl(var(--accent));
+    --color-accent-foreground: hsl(var(--accent-foreground));
+
+    --color-popover: hsl(var(--popover));
+    --color-popover-foreground: hsl(var(--popover-foreground));
+
+    --color-card: hsl(var(--card));
+    --color-card-foreground: hsl(var(--card-foreground));
+
+    --radius-lg: var(--radius);
+    --radius-md: calc(var(--radius) - 2px);
+    --radius-sm: calc(var(--radius) - 4px);
+
+    --animate-accordion-down: accordion-down 0.2s ease-out;
+    --animate-accordion-up: accordion-up 0.2s ease-out;
+    --animate-spin-slow: spin-slow 60s linear infinite;
+    --animate-spin-medium: spin-medium 8s linear infinite;
+    --animate-spin-medium-rev: spin-medium-rev 12s linear infinite;
+    --animate-spin-fast: spin-fast 3s cubic-bezier(0.4, 0, 0.2, 1) infinite;
+    --animate-pulse-core: pulse-core 4s ease-in-out infinite;
+
+    --font-sans: Satoshi, sans-serif;
+    --font-noxlock: Noxlock, sans-serif;
+    --font-dotspot: var(--font-dotspot), sans-serif;
+
+    @keyframes accordion-down {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: var(--radix-accordion-content-height);
+        }
+    }
+
+    @keyframes accordion-up {
+        from {
+            height: var(--radix-accordion-content-height);
+        }
+
+        to {
+            height: 0;
+        }
+    }
+
+    @keyframes spin-slow {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin-medium {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes spin-medium-rev {
+        0% {
+            transform: rotate(360deg);
+        }
+
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+
+    @keyframes spin-fast {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    @keyframes pulse-core {
+
+        0%,
+        100% {
+            transform: scale(1);
+            opacity: 0.8;
+        }
+
+        50% {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    }
+
+    @keyframes bounce-slow {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(10px);
+        }
+    }
+
+    --animate-bounce-slow: bounce-slow 2s ease-in-out infinite;
+
+    @keyframes scroll-line {
+        0% {
+            transform: translateY(-100%);
+        }
+
+        100% {
+            transform: translateY(100%);
+        }
+    }
+
+    --animate-scroll-line: scroll-line 2s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+
+    @keyframes morph {
+        0% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        50% {
+            border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+        }
+
+        100% {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+    }
+
+    --animate-morph: morph 8s ease-in-out infinite;
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @keyframes float-shadow {
+
+        0%,
+        100% {
+            opacity: 0.8;
+            transform: scale(1);
+        }
+
+        50% {
+            opacity: 0.4;
+            transform: scale(0.8);
+        }
+    }
+
+    --animate-float: float 6s ease-in-out infinite;
+    --animate-float-shadow: float-shadow 6s ease-in-out infinite;
+}
+
+
+@layer base {
+    :root {
+        --background: 0 0% 3.1%;
+        /* #080808 */
+        --foreground: 0 0% 95%;
+
+        --card: 0 0% 3.1%;
+        --card-foreground: 0 0% 95%;
+
+        --popover: 0 0% 3.1%;
+        --popover-foreground: 0 0% 95%;
+
+        --primary: 14 68% 48%;
+        /* #D55A21 approx */
+        --primary-foreground: 0, 0%, 100%;
+
+        --secondary: 240 3.7% 15.9%;
+        --secondary-foreground: 0 0% 98%;
+
+        --muted: 240 3.7% 15.9%;
+        --muted-foreground: 240 5% 64.9%;
+
+        --accent: 240 3.7% 15.9%;
+        --accent-foreground: 0 0% 98%;
+
+        --destructive: 0 62.8% 30.6%;
+        --destructive-foreground: 0 0% 98%;
+
+        --border: 240 3.7% 15.9%;
+        --input: 240 3.7% 15.9%;
+        --ring: 14 68% 48%;
+
+        --radius: 0.5rem;
+
+        /* Custom Fonts Variables for Tailwind to pick up if not using next/font vars directly in config */
+        /* We used config to map them to CSS vars or font names */
+    }
+}
+
+@layer base {
+    * {
+        @apply border-border;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}
+
+/* CSS Custom Properties for Animation */
+@property --light-opacity {
+    syntax: '<number>';
+    inherits: false;
+    initial-value: 0.1;
+    /* Start with 10% opacity */
+}
+
+/* Custom CSS from legacy style.css */
+
+.hero-gradient::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background: radial-gradient(ellipse at top left, rgba(213, 90, 33, 0.25), transparent 70%),
+        radial-gradient(ellipse at bottom right, rgba(88, 28, 135, 0.60), transparent 70%);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.glassy {
+    background: rgba(18, 23, 34, 0.5);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.project-card:hover {
+    cursor: none;
+}
+
+/* Flashlight Effect Styles */
+.flashlight-wrapper {
+    padding: 5rem;
+    margin: -5rem;
+}
+
+.flashlight {
+    background: radial-gradient(circle at var(--x, 50%) var(--y, 50%),
+            rgba(255, 255, 255, var(--light-opacity)) 0%,
+            rgba(224, 224, 224, var(--light-opacity)) 15%,
+            rgba(224, 224, 224, 0.1) 40%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    color: transparent;
+    transition: --light-opacity 0.3s ease-out;
+}
+
+/* Timeline Line Fade Effect */
+.timeline-line {
+    background: linear-gradient(to top, #6b7280, transparent);
+}
+
+@keyframes spin-slow {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-medium {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spin-medium-rev {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes spin-fast {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse-core {
+
+    0%,
+    100% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
