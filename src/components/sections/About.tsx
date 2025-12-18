@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Search, PenTool, LayoutTemplate } from "lucide-react";
 import { Tools } from './Tools';
 
-
 export function About() {
     const wrapperRef = React.useRef<HTMLDivElement>(null);
     const textRef = React.useRef<HTMLSpanElement>(null);
@@ -92,7 +91,6 @@ export function About() {
                 </div>
             </div>
 
-
             {/* Software & Tools Section */}
             <Tools />
 
@@ -109,6 +107,7 @@ export function About() {
                 <div className="relative max-w-4xl mx-auto">
                     {/* Vertical Line */}
                     <div className="absolute top-0 left-4 md:left-1/2 -translate-x-1/2 h-full w-0.5 timeline-line"></div>
+
                     {/* Timeline Items Wrapper */}
                     <div className="space-y-12">
                         {/* Item 1 */}
@@ -120,6 +119,7 @@ export function About() {
                                 <p className="text-sm text-gray-500 mt-1">RF Interactive Laiyon - 2025</p>
                             </div>
                         </div>
+
                         {/* Item 2 */}
                         <div className="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-8">
                             <div className="md:text-right md:pr-8">
@@ -127,13 +127,14 @@ export function About() {
                                 <p className="text-md text-gray-400">Internship</p>
                                 <p className="text-sm text-gray-500 mt-1">RF Interactive Laiyon - 2024</p>
                             </div>
-                            <div></div>
+                            <div />
                         </div>
+
                         {/* Item 3 */}
                         <div className="relative pl-12 md:grid md:grid-cols-2 md:gap-8">
-                            <div></div>
+                            <div />
                             <div>
-                                <div className="absolute left-4 md:left-1/2 -translate-x-1/2 -bottom-2 w-5 h-5 bg-white rounded-full"></div>
+                                <div className="absolute left-4 md:left-1/2 -translate-x-1/2 -bottom-2 w-5 h-5 bg-white rounded-full" />
                                 <h3 className="text-xl font-bold">Bachelor Degree Informatic Media</h3>
                                 <p className="text-md text-gray-400">Student</p>
                                 <p className="text-sm text-gray-500 mt-1">Unisza, Besut - 2021-2024</p>
