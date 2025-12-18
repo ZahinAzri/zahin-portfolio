@@ -112,7 +112,7 @@ export function About() {
                     {/* Timeline Items Wrapper */}
                     <div className="space-y-12">
                         {/* Item 1 */}
-                        <div className="relative pl-12 md:grid md:grid-cols-2 md:gap-8">
+                        <div className="relative pl-12 md:pl-0 md:grid md:grid-cols-2 md:gap-8">
                             <div className="md:text-right md:pr-8"></div>
                             <div>
                                 <h3 className="text-xl font-bold">UI/UX Designer</h3>
@@ -133,7 +133,7 @@ export function About() {
                         <div className="relative pl-12 md:grid md:grid-cols-2 md:gap-8">
                             <div></div>
                             <div>
-                                <div className="absolute left-4 md:left-1/2 -translate-x-1/2 -bottom-2 w-5 h-5 bg-white rounded-full border-4 border-[#080808]"></div>
+                                <div className="absolute left-4 md:left-1/2 -translate-x-1/2 -bottom-2 w-5 h-5 bg-white rounded-full"></div>
                                 <h3 className="text-xl font-bold">Bachelor Degree Informatic Media</h3>
                                 <p className="text-md text-gray-400">Student</p>
                                 <p className="text-sm text-gray-500 mt-1">Unisza, Besut - 2021-2024</p>

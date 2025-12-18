@@ -1,10 +1,11 @@
 "use client";
 
 import React, { useRef, useEffect } from 'react';
-import { StarTrail } from './StarTrail';
+import { Orb } from './Orb';
+import { Linkedin } from 'lucide-react';
 
 export function Hero() {
-    const wrapperRef = useRef<HTMLDivElement>(null);
+    const wrapperRef = useRef<HTMLSpanElement>(null);
     const textRef = useRef<HTMLSpanElement>(null);
 
     useEffect(() => {
@@ -39,35 +40,53 @@ export function Hero() {
         <section id="home" data-scroll-section
             className="relative min-h-screen hero-gradient flex flex-col justify-center overflow-hidden">
 
-            <StarTrail />
+            <div className="px-8 md:px-[100px] relative z-10 w-full min-h-screen flex items-center">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center w-full">
+                    {/* Left Column: Text Content */}
+                    <div className="text-left order-2 md:order-1 pb-24 md:pb-0">
 
-            <div className="px-8 md:px-[100px] relative z-10">
-                <div className="text-center md:text-left pb-24">
-                    <div className="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
-                        {['UI/UX Designer', 'Creative Designer', 'Prototyping'].map((tag) => (
-                            <span key={tag}
-                                className="border-2 border-[#D55A21] bg-[#D55A21]/[0.3] text-[#D55A21] text-sm md:text-base rounded-full px-[25px] py-[5px] font-medium">
-                                {tag}
+
+                        <h1 className="font-bold text-5xl md:text-7xl leading-tight max-w-4xl">
+                            Hi, I'm <span className="text-[#D55A21]">Zahin Azri</span> <br />
+                            <span ref={wrapperRef} className="relative hidden md:inline-block flashlight-wrapper">
+                                <span ref={textRef} className="flashlight">UI/UX Designer</span>
                             </span>
-                        ))}
-                    </div>
-                    <h1 className="font-bold text-5xl md:text-7xl leading-tight max-w-4xl">
-                        Hi, I'm <span className="text-[#D55A21]">Zahin Azri</span> <br />
-                        <div ref={wrapperRef} className="relative hidden md:inline-block flashlight-wrapper">
-                            <span ref={textRef} className="flashlight">UI/UX Designer</span>
+                            <span className="inline md:hidden">UI/UX Designer</span>
+                        </h1>
+                        <p className="mt-6 text-xl md:text-2xl text-gray-300 font-light">
+                            I specialize in user-centered design, transforming complex problems into elegant, intuitive
+                            solutions. Currently crafting digital experiences that bridge business goals with user
+                            needs.
+                        </p>
+
+                        <div className="mt-10 flex flex-wrap gap-4 justify-start">
+                            <button
+                                onClick={() => document.getElementById('portfolio')?.scrollIntoView({ behavior: 'smooth' })}
+                                className="bg-[#FF5500] hover:bg-[#FF5500]/90 text-white font-medium px-8 py-4 rounded-full transition-all duration-300 md:text-lg"
+                            >
+                                View Portfolio
+                            </button>
                         </div>
-                        <span className="inline md:hidden">UI/UX Designer</span>
-                    </h1>
-                    <p className="mt-6 text-xl md:text-2xl text-gray-300 font-light">
-                        I specialize in user-centered design, transforming complex problems into elegant, intuitive
-                        solutions. Currently crafting digital experiences that bridge business goals with user
-                        needs.
-                    </p>
+                    </div>
+
+                    {/* Right Column: Orb */}
+                    <div className="flex justify-center items-center order-1 md:order-2 h-[400px] md:h-auto">
+                        <Orb />
+                    </div>
                 </div>
             </div>
-            <div className="absolute bottom-[72px] left-1/2 -translate-x-1/2 z-10">
-                <div className="scroll-indicator">
-                    <div className="scroll-dot"></div>
+
+            <div className="absolute bottom-8 left-8 md:left-[100px] z-20 flex gap-6">
+                <a href="https://www.linkedin.com/in/muhamad-zahin-azri-nazri-28ab5a1a3/" className="text-gray-400 hover:text-white transition-colors">
+                    <Linkedin className="w-6 h-6" />
+
+                </a>
+            </div>
+
+            <div className="absolute bottom-[40px] left-1/2 -translate-x-1/2 z-10 flex flex-col items-center gap-4">
+                <span className="text-gray-400 text-[10px] tracking-[0.2em] font-medium uppercase opacity-80" style={{ writingMode: 'vertical-rl' }}>Scroll</span>
+                <div className="w-[1px] h-[60px] relative overflow-hidden">
+                    <div className="absolute top-0 left-0 w-full h-full bg-white animate-scroll-line"></div>
                 </div>
             </div>
         </section>
