@@ -2,6 +2,8 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { CursorSVG } from '@/components/ui/CursorSVG';
+import { AnimatePresence } from 'framer-motion';
+import { ProjectShowcase } from './ProjectShowcase';
 
 export function Portfolio() {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -59,12 +61,23 @@ export function Portfolio() {
         };
     }, [isHovering]);
 
+    const [selectedProject, setSelectedProject] = useState<string | null>(null);
+
     // Note: Image paths need to be updated to /images/... if we moved assets.
     // Assuming we moved `_legacy/assets` to `public/assets` or better `public/images`.
     // Actually, I moved the whole `assets` folder to `_legacy`. I should copy it back to `public`.
 
     return (
         <section id="portfolio" data-scroll-section className="py-24 sm:py-32 relative">
+            <AnimatePresence>
+                {selectedProject === 'pcari' && (
+                    <ProjectShowcase
+                        isOpen={true}
+                        onClose={() => setSelectedProject(null)}
+                    />
+                )}
+            </AnimatePresence>
+
             {/* Custom Cursor */}
             <div
                 ref={cursorRef}
@@ -75,14 +88,16 @@ export function Portfolio() {
             </div>
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h2 className="text-4xl font-bold">My Portfolio</h2>
-                <p className="mt-4 text-lg text-gray-400">My design journey so far</p>
+                <h2 className="text-4xl font-bold">Project Showcase</h2>
+                <p className="mt-4 text-lg text-gray-400">Projects I have participated thus far</p>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Project Card 1 */}
-                    <a href="#"
+                    <div
+                        onClick={() => setSelectedProject('pcari')}
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
-                        className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] border border-white/5 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none">
+                        className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] border border-white/5 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none pointer-events-auto"
+                    >
                         <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none">
                             {/* Optimistically pointing to where I will put images */}
                             <img src="/assets/projects/pcari-booking.png" alt="Pcari Booking Mockup"
@@ -100,7 +115,7 @@ export function Portfolio() {
 
                             </div>
                         </div>
-                    </a>
+                    </div>
                     {/* Project Card 2 */}
                     <a href="#"
                         onMouseEnter={() => setIsHovering(true)}
