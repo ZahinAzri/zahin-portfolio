@@ -1,3 +1,0 @@
-module.exports=[18622,(a,b,c)=>{b.exports=a.x("next/dist/compiled/next-server/app-page-turbo.runtime.prod.js",()=>require("next/dist/compiled/next-server/app-page-turbo.runtime.prod.js"))},42602,(a,b,c)=>{"use strict";b.exports=a.r(18622)},72131,(a,b,c)=>{"use strict";b.exports=a.r(42602).vendored["react-ssr"].React},7544,a=>{"use strict";var b=a.i(72131);function c(){return(0,b.useEffect)(()=>{(async()=>{new(await a.A(14848)).default})()},[]),null}a.s(["default",()=>c])},14848,a=>{a.v(b=>Promise.all(["server/chunks/ssr/node_modules_locomotive-scroll_dist_locomotive-scroll_esm_c7e26bc7.js"].map(b=>a.l(b))).then(()=>b(34058)))}];
-
-//# sourceMappingURL=%5Broot-of-the-server%5D__064b8a03._.js.map
