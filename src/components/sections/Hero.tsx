@@ -14,7 +14,7 @@ export function Hero() {
                     Hi, I'm <span className="text-[#D55A21]">Zahin Azri</span>
                 </h1>
                 <div className="w-full max-w-4xl h-[120px] mb-8">
-                    <ParticleText text="UI/UX Designer" fontSize={120} className="w-full h-full" />
+                    <ParticleText text="UI/UX Designer" fontSize={60} className="w-full h-full" />
                 </div>
 
                 <p className="max-w-3xl mx-auto text-lg md:text-xl text-gray-300 font-light leading-relaxed mb-12">
