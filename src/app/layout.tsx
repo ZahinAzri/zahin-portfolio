@@ -4,6 +4,7 @@ import "./globals.css";
 import { cn } from "@/lib/utils";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import ClientWrapper from "@/components/ClientWrapper";
+import { Navbar } from "@/components/layout/Navbar";
 
 const dotSpot = localFont({
     src: "../../public/fonts/DotSpot-Regular.woff2",
@@ -29,6 +30,7 @@ export default function RootLayout({
             </head>
             <body className={cn("bg-[#080808] text-white font-sans antialiased selection:bg-[#D55A21] selection:text-white", dotSpot.variable)}>
                 <ClientWrapper>
+                    <Navbar />
                     <SmoothScroll />
                     {children}
                 </ClientWrapper>
