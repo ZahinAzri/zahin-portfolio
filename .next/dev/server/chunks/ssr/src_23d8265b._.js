@@ -1910,14 +1910,17 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "flex items-center gap-4 text-sm text-gray-500 mb-6",
                                     children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            children: "Back to Portfolio"
+                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                            onClick: onClose,
+                                            className: "hover:text-white transition-colors cursor-pointer",
+                                            children: "Portfolio"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
                                             lineNumber: 60,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                            className: "text-white/50",
                                             children: "/"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
@@ -1973,8 +1976,8 @@ function ProjectShowcase({ isOpen, onClose }) {
                             className: "relative aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                    src: "/assets/projects/pcari-booking.png",
-                                    alt: "Pcari Booking Hero",
+                                    src: "/images/pcari booking.jpg",
+                                    alt: "Pcari Booking",
                                     className: "w-full h-full object-cover"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
@@ -2000,7 +2003,7 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-gray-500 text-sm font-medium mb-2",
+                                            className: "text-gray-500 text-xm font-medium mb-2",
                                             children: "My Role"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
@@ -2024,7 +2027,7 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-gray-500 text-sm font-medium mb-2",
+                                            className: "text-gray-500 text-xm font-medium mb-2",
                                             children: "Timeline"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
@@ -2048,7 +2051,7 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-gray-500 text-sm font-medium mb-2",
+                                            className: "text-gray-500 text-xm font-medium mb-2",
                                             children: "Tools"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
@@ -2058,9 +2061,85 @@ function ProjectShowcase({ isOpen, onClose }) {
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "flex items-center gap-2",
                                             children: [
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "w-5 h-5 bg-[#F24E1E] rounded-full"
-                                                }, void 0, false, {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("svg", {
+                                                    className: "w-5 h-5",
+                                                    viewBox: "0 0 22 32",
+                                                    fill: "none",
+                                                    xmlns: "http://www.w3.org/2000/svg",
+                                                    children: [
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("g", {
+                                                            clipPath: "url(#clip0_project_showcase_figma)",
+                                                            children: [
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M5.33724 32.0007C8.28124 32.0007 10.6706 29.6113 10.6706 26.6673V21.334H5.33724C2.39324 21.334 0.00390625 23.7233 0.00390625 26.6673C0.00390625 29.6113 2.39324 32.0007 5.33724 32.0007Z",
+                                                                    fill: "#0ACF83"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                    lineNumber: 99,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M0.00390625 15.9993C0.00390625 13.0553 2.39324 10.666 5.33724 10.666H10.6706V21.3327H5.33724C2.39324 21.3327 0.00390625 18.9433 0.00390625 15.9993Z",
+                                                                    fill: "#A259FF"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                    lineNumber: 102,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M0.00390625 5.33333C0.00390625 2.38933 2.39324 0 5.33724 0H10.6706V10.6667H5.33724C2.39324 10.6667 0.00390625 8.27733 0.00390625 5.33333Z",
+                                                                    fill: "#F24E1E"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                    lineNumber: 105,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M10.6719 0H16.0052C18.9492 0 21.3385 2.38933 21.3385 5.33333C21.3385 8.27733 18.9492 10.6667 16.0052 10.6667H10.6719V0Z",
+                                                                    fill: "#FF7262"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                    lineNumber: 108,
+                                                                    columnNumber: 41
+                                                                }, this),
+                                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("path", {
+                                                                    d: "M21.3385 15.9993C21.3385 18.9433 18.9492 21.3327 16.0052 21.3327C13.0612 21.3327 10.6719 18.9433 10.6719 15.9993C10.6719 13.0553 13.0612 10.666 16.0052 10.666C18.9492 10.666 21.3385 13.0553 21.3385 15.9993Z",
+                                                                    fill: "#1ABCFE"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                    lineNumber: 111,
+                                                                    columnNumber: 41
+                                                                }, this)
+                                                            ]
+                                                        }, void 0, true, {
+                                                            fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                            lineNumber: 98,
+                                                            columnNumber: 37
+                                                        }, this),
+                                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("defs", {
+                                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("clipPath", {
+                                                                id: "clip0_project_showcase_figma",
+                                                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("rect", {
+                                                                    width: "21.34",
+                                                                    height: "32",
+                                                                    fill: "white"
+                                                                }, void 0, false, {
+                                                                    fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                    lineNumber: 117,
+                                                                    columnNumber: 45
+                                                                }, this)
+                                                            }, void 0, false, {
+                                                                fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                                lineNumber: 116,
+                                                                columnNumber: 41
+                                                            }, this)
+                                                        }, void 0, false, {
+                                                            fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                            lineNumber: 115,
+                                                            columnNumber: 37
+                                                        }, this)
+                                                    ]
+                                                }, void 0, true, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
                                                     lineNumber: 97,
                                                     columnNumber: 33
@@ -2070,7 +2149,7 @@ function ProjectShowcase({ isOpen, onClose }) {
                                                     children: "Figma"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 98,
+                                                    lineNumber: 121,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
@@ -2088,11 +2167,11 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                            className: "text-gray-500 text-sm font-medium mb-2",
+                                            className: "text-gray-500 text-xm font-medium mb-2",
                                             children: "Team"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 102,
+                                            lineNumber: 125,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2100,13 +2179,13 @@ function ProjectShowcase({ isOpen, onClose }) {
                                             children: "3 Designers, 5 Devs"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 103,
+                                            lineNumber: 126,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 101,
+                                    lineNumber: 124,
                                     columnNumber: 25
                                 }, this)
                             ]
@@ -2121,169 +2200,190 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 className: "flex flex-col md:flex-row gap-12",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-[#D55A21] text-2xl font-bold w-full md:w-1/4",
+                                        className: "text-[#D55A21] text-4xl font-bold w-full md:w-1/4",
                                         children: "The Challenge"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                        lineNumber: 110,
+                                        lineNumber: 133,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "w-full md:w-3/4 space-y-6 text-gray-400 text-lg leading-relaxed",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
+                                                className: "text-white",
                                                 children: "The existing ecosystem was fragmented. Merchants struggled to manage their reservations and booking flow efficiently, often relying on manual tracking. On the user side, users had a high error rate when locating pending reviews after visiting the mall."
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                lineNumber: 112,
+                                                lineNumber: 135,
                                                 columnNumber: 33
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                className: "font-medium text-white",
-                                                children: "The Goal: Design a unified mobile app architecture that seamlessly connects the Merchant Dashboard (Tablet/Web) ecosystem with the User Journey (booking, dining & finding)."
-                                            }, void 0, false, {
+                                                className: "text-white",
+                                                children: [
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("b", {
+                                                        children: "The Goal:"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                                                        lineNumber: 139,
+                                                        columnNumber: 37
+                                                    }, this),
+                                                    " Design a unified mobile app architecture that seamlessly connects the Merchant Dashboard (Tablet/Web) ecosystem with the User Journey (booking, dining & finding)."
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                lineNumber: 115,
+                                                lineNumber: 138,
                                                 columnNumber: 33
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                        lineNumber: 111,
+                                        lineNumber: 134,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                lineNumber: 109,
+                                lineNumber: 132,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                            lineNumber: 108,
+                            lineNumber: 131,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "mb-32",
+                            className: "mb-16",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
-                                    className: "text-center text-sm text-gray-500 uppercase tracking-widest mb-12",
-                                    children: "Wireframes & Low Fidelity Prototypes"
+                                    className: "text-center text-sm text-white uppercase tracking-widest mb-12",
+                                    children: "Wireframes & High Fidelity Prototypes"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 124,
+                                    lineNumber: 147,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "grid grid-cols-2 md:grid-cols-4 gap-4",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "aspect-[9/16] bg-zinc-900 rounded-xl border border-white/5 p-4 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-gray-600",
-                                                children: "Merchant Onboarding"
+                                            className: "aspect-[1] bg-[#212529] rounded-xl overflow-hidden",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/images/Merchant Onboarding.jpg",
+                                                alt: "Merchant Onboarding",
+                                                className: "w-full h-full object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                lineNumber: 128,
+                                                lineNumber: 151,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 127,
+                                            lineNumber: 150,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "aspect-[9/16] bg-zinc-900 rounded-xl border border-white/5 p-4 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-gray-600",
-                                                children: "Merchant Menu Mgmt"
+                                            className: "aspect-[1] bg-[#212529] rounded-xl overflow-hidden",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/images/Merchant Menu Management.jpg",
+                                                alt: "Merchant Menu Management",
+                                                className: "w-full h-full object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                lineNumber: 131,
+                                                lineNumber: 158,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 130,
+                                            lineNumber: 157,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "aspect-[9/16] bg-zinc-900 rounded-xl border border-white/5 p-4 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-gray-600",
-                                                children: "Promotion Mgmt"
+                                            className: "aspect-[1] bg-[#212529] rounded-xl overflow-hidden",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/images/Merchant Promotion Management.jpg",
+                                                alt: "Merchant Promotion Management",
+                                                className: "w-full h-full object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                lineNumber: 134,
+                                                lineNumber: 165,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 133,
+                                            lineNumber: 164,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "aspect-[9/16] bg-zinc-900 rounded-xl border border-white/5 p-4 flex items-center justify-center",
-                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                className: "text-xs text-gray-600",
-                                                children: "Customer Interaction"
+                                            className: "aspect-[1] bg-[#212529] rounded-xl overflow-hidden",
+                                            children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                src: "/images/Merchant & Customer Interaction.jpg",
+                                                alt: "Merchant Customer Interaction",
+                                                className: "w-full h-full object-contain"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                lineNumber: 137,
+                                                lineNumber: 172,
                                                 columnNumber: 33
                                             }, this)
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 136,
+                                            lineNumber: 171,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 125,
+                                    lineNumber: 148,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-center text-sm text-gray-500",
+                                    className: "grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-center text-m text-white",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Merchant Onboarding"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 141,
+                                            lineNumber: 180,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Merchant Menu Management"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 142,
+                                            lineNumber: 181,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Merchant Promotion Management"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 143,
+                                            lineNumber: 182,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "Merchant & Customer Interaction"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 144,
+                                            lineNumber: 183,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 140,
+                                    lineNumber: 179,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                            lineNumber: 123,
+                            lineNumber: 146,
+                            columnNumber: 21
+                        }, this),
+                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                            className: "border-t border-white/10 w-full mb-16"
+                        }, void 0, false, {
+                            fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
+                            lineNumber: 187,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2292,36 +2392,36 @@ function ProjectShowcase({ isOpen, onClose }) {
                                 className: "flex flex-col md:flex-row gap-12",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                        className: "text-[#D55A21] text-2xl font-bold w-full md:w-1/4",
+                                        className: "text-[#D55A21] text-4xl font-bold w-full md:w-1/4",
                                         children: "The Solution"
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                        lineNumber: 151,
+                                        lineNumber: 192,
                                         columnNumber: 29
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                        className: "w-full md:w-3/4 text-gray-400 text-lg leading-relaxed",
+                                        className: "w-full md:w-3/4 text-white text-lg leading-relaxed",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                             children: "We established a dual-app strategy to handle distinct user needs. A dedicated Merchant App for business control and a User App for seamless discovery and booking."
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 153,
+                                            lineNumber: 194,
                                             columnNumber: 33
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                        lineNumber: 152,
+                                        lineNumber: 193,
                                         columnNumber: 29
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                lineNumber: 150,
+                                lineNumber: 191,
                                 columnNumber: 25
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                            lineNumber: 149,
+                            lineNumber: 190,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2332,7 +2432,7 @@ function ProjectShowcase({ isOpen, onClose }) {
                                     children: "Buyer POV"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 162,
+                                    lineNumber: 203,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2340,147 +2440,151 @@ function ProjectShowcase({ isOpen, onClose }) {
                                     children: 'Streamlined the end-user flow. Users can seamless browse "Featured" spots nearby, check availability, and book instantly.'
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 163,
+                                    lineNumber: 204,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                     className: "bg-[#1C1C1E] rounded-2xl p-8 border border-white/5",
                                     children: [
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                            className: "text-center text-sm text-gray-500 mb-8 uppercase tracking-widest",
+                                            className: "text-center text-sm text-white mb-8 uppercase tracking-widest",
                                             children: "System Design"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 168,
+                                            lineNumber: 209,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "grid grid-cols-2 md:grid-cols-4 gap-6",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Booking Homepage"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Booking Homepage.png",
+                                                        alt: "Booking Homepage",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 173,
-                                                        columnNumber: 37
+                                                        lineNumber: 213,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 171,
+                                                    lineNumber: 212,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Order Process: Menu"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Order Process - Menus.png",
+                                                        alt: "Order Process Menu",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 176,
-                                                        columnNumber: 37
+                                                        lineNumber: 220,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 175,
+                                                    lineNumber: 219,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Order Process: Menu Options"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Order Process - Menu Options.png",
+                                                        alt: "Booking Homepage",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 179,
-                                                        columnNumber: 37
+                                                        lineNumber: 227,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 178,
-                                                    columnNumber: 33
+                                                    lineNumber: 225,
+                                                    columnNumber: 39
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Service Selection"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Order Process - Service Selection.png",
+                                                        alt: "Booking Homepage",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 182,
-                                                        columnNumber: 37
+                                                        lineNumber: 234,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 181,
+                                                    lineNumber: 233,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 169,
+                                            lineNumber: 210,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "grid grid-cols-2 md:grid-cols-4 gap-6 mt-6 text-center text-xs text-gray-400",
+                                            className: "grid grid-cols-2 md:grid-cols-4 gap-6 mt-6 text-center text-xm text-gray-400",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: "Booking Homepage"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 186,
+                                                    lineNumber: 242,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: "Order Process Menu"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 187,
+                                                    lineNumber: 243,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: "Order Process Menu Options"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 188,
+                                                    lineNumber: 244,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: "Order Process Service Selection"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 189,
+                                                    lineNumber: 245,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 185,
+                                            lineNumber: 241,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 167,
+                                    lineNumber: 208,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                            lineNumber: 161,
+                            lineNumber: 202,
                             columnNumber: 21
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "border border-white/10 rounded-3xl p-8 md:p-12 bg-black",
+                            className: "border border-[#D55A21] rounded-3xl p-8 md:p-12 mb-12 bg-[#D55A21]/5",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                     className: "text-xl font-bold text-white mb-2",
                                     children: "Merchant POV"
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 196,
+                                    lineNumber: 252,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
@@ -2488,7 +2592,7 @@ function ProjectShowcase({ isOpen, onClose }) {
                                     children: "Designed a comprehensive Dashboard allowing merchants to customize their Restaurant Menu, Promotions, and track Delivery Statuses without clutter."
                                 }, void 0, false, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 197,
+                                    lineNumber: 253,
                                     columnNumber: 25
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -2499,125 +2603,129 @@ function ProjectShowcase({ isOpen, onClose }) {
                                             children: "System Design"
                                         }, void 0, false, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 202,
+                                            lineNumber: 258,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                             className: "grid grid-cols-2 md:grid-cols-4 gap-6",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Merchant Dashboard"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Merchant Dashboard.png",
+                                                        alt: "Booking Homepage",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 206,
-                                                        columnNumber: 37
+                                                        lineNumber: 262,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 205,
+                                                    lineNumber: 261,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Mobile System + New Order"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Dine In Order.png",
+                                                        alt: "Order Process Menu",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 209,
-                                                        columnNumber: 37
+                                                        lineNumber: 269,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 208,
+                                                    lineNumber: 268,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Mobile System + New Order"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Pickup Order.png",
+                                                        alt: "Booking Homepage",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 212,
-                                                        columnNumber: 37
+                                                        lineNumber: 276,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 211,
-                                                    columnNumber: 33
+                                                    lineNumber: 274,
+                                                    columnNumber: 39
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "aspect-[9/19] bg-zinc-800 rounded-2xl border border-white/10 shadow-xl overflow-hidden",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                        className: "w-full h-full flex items-center justify-center text-xs text-gray-600",
-                                                        children: "Pickup Order + Growing Order"
+                                                    className: "aspect-[9/19] overflow-hidden",
+                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
+                                                        src: "/images/Pickup Ongoing.png",
+                                                        alt: "Booking Homepage",
+                                                        className: "w-full h-full object-contain"
                                                     }, void 0, false, {
                                                         fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                        lineNumber: 215,
-                                                        columnNumber: 37
+                                                        lineNumber: 283,
+                                                        columnNumber: 101
                                                     }, this)
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 214,
+                                                    lineNumber: 282,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 203,
+                                            lineNumber: 259,
                                             columnNumber: 29
                                         }, this),
                                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                            className: "grid grid-cols-2 md:grid-cols-4 gap-6 mt-6 text-center text-xs text-gray-400",
+                                            className: "grid grid-cols-2 md:grid-cols-4 gap-6 mt-6 text-center text-xm text-gray-400",
                                             children: [
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                                     children: "Merchant Dashboard"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 219,
+                                                    lineNumber: 291,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "Mobile System + New Order"
+                                                    children: "Dine In New Order"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 220,
+                                                    lineNumber: 292,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "Mobile System + New Order"
+                                                    children: "Pickup New Order"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 221,
+                                                    lineNumber: 293,
                                                     columnNumber: 33
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                                    children: "Pickup Order + Growing Order"
+                                                    children: "Pickup Ongoing Order"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                                    lineNumber: 222,
+                                                    lineNumber: 294,
                                                     columnNumber: 33
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                            lineNumber: 218,
+                                            lineNumber: 290,
                                             columnNumber: 29
                                         }, this)
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                                    lineNumber: 201,
+                                    lineNumber: 257,
                                     columnNumber: 25
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/components/sections/ProjectShowcase.tsx",
-                            lineNumber: 195,
+                            lineNumber: 251,
                             columnNumber: 21
                         }, this)
                     ]
@@ -2792,7 +2900,7 @@ function Portfolio() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: "/assets/projects/pcari-booking.png",
+                                            src: "/images/pcari booking.jpg",
                                             alt: "Pcari Booking Mockup",
                                             className: "w-full h-auto"
                                         }, void 0, false, {
@@ -2868,7 +2976,7 @@ function Portfolio() {
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                         className: "bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("img", {
-                                            src: "/assets/projects/kad-pekerja-madani.png",
+                                            src: "/images/kad-pekerja-madani.png",
                                             alt: "Card Project Mockup",
                                             className: "w-full h-auto"
                                         }, void 0, false, {

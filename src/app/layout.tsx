@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import SmoothScroll from "@/components/ui/SmoothScroll";
+import ClientWrapper from "@/components/ClientWrapper";
 
 const dotSpot = localFont({
     src: "../../public/fonts/DotSpot-Regular.woff2",
@@ -27,8 +28,10 @@ export default function RootLayout({
                 <link href="https://fonts.googleapis.com/css2?family=Noxlock&family=Rubik+Dots&display=swap" rel="stylesheet" />
             </head>
             <body className={cn("bg-[#080808] text-white font-sans antialiased selection:bg-[#D55A21] selection:text-white", dotSpot.variable)}>
-                <SmoothScroll />
-                {children}
+                <ClientWrapper>
+                    <SmoothScroll />
+                    {children}
+                </ClientWrapper>
             </body>
         </html>
     );

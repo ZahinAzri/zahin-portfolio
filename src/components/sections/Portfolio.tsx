@@ -100,7 +100,7 @@ export function Portfolio() {
                     >
                         <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none">
                             {/* Optimistically pointing to where I will put images */}
-                            <img src="/assets/projects/pcari-booking.png" alt="Pcari Booking Mockup"
+                            <img src="/images/pcari booking.jpg" alt="Pcari Booking Mockup"
                                 className="w-full h-auto" />
                         </div>
                         <h3 className="text-2xl font-medium px-2">Pcari Booking</h3>
@@ -122,7 +122,7 @@ export function Portfolio() {
                         onMouseLeave={() => setIsHovering(false)}
                         className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none">
                         <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none">
-                            <img src="/assets/projects/kad-pekerja-madani.png" alt="Card Project Mockup"
+                            <img src="/images/kad-pekerja-madani.png" alt="Card Project Mockup"
                                 className="w-full h-auto" />
                         </div>
                         <h3 className="text-2xl font-medium px-2">Kad Pekerja Madani</h3>
