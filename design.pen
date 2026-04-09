@@ -1,0 +1,141 @@
+{
+  "version": "2.10",
+  "children": [
+    {
+      "type": "frame",
+      "id": "fCAxD",
+      "x": -72,
+      "y": -323,
+      "name": "Image Card",
+      "width": 810,
+      "fill": "#ffffffff",
+      "cornerRadius": 50,
+      "stroke": {
+        "align": "inside",
+        "thickness": 1
+      },
+      "layout": "vertical",
+      "gap": 25,
+      "padding": 25,
+      "alignItems": "center",
+      "children": [
+        {
+          "type": "rectangle",
+          "cornerRadius": 25,
+          "id": "VMycX",
+          "name": "Image",
+          "fill": {
+            "type": "image",
+            "enabled": true,
+            "url": "",
+            "mode": "fill"
+          },
+          "width": "fill_container",
+          "height": 664.6864624023438,
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          }
+        },
+        {
+          "type": "frame",
+          "id": "u4ved",
+          "name": "Frame 1984080519",
+          "width": "fill_container",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1
+          },
+          "gap": 99,
+          "padding": [
+            0,
+            25
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "sHMPn",
+              "name": "Frame 1984080517",
+              "fill": "#d14e28ff",
+              "cornerRadius": 5,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "gap": 10,
+              "padding": [
+                10,
+                15
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "Y9IAu",
+                  "name": "Vector",
+                  "rotation": 90.00000000000001,
+                  "flipX": true,
+                  "geometry": "M13.26289 5.82789c0.14505 0.13607 0.23012 0.32418 0.2365 0.52296 0.00638 0.19878-0.06646 0.39196-0.2025 0.53704l-5.797 0 0 8.862c0 0.19891-0.07902 0.38968-0.21968 0.53033-0.14065 0.14065-0.33142 0.21967-0.53032 0.21967-0.19891 0-0.38968-0.07902-0.53033-0.21967-0.14065-0.14065-0.21967-0.33142-0.21967-0.53033l0-8.862-5.797 0c-0.13604-0.14508-0.20888-0.33826-0.2025-0.53704 0.00638-0.19878 0.09145-0.38689 0.2365-0.52296l6-5.625c0.13901-0.13035 0.32243-0.20289 0.513-0.20289 0.19057 0 0.37399 0.07254 0.51299 0.20289l6.00001 5.625z",
+                  "fill": "#ffffffff",
+                  "width": 30,
+                  "height": 37,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.3333333730697632
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "VL8wn",
+              "name": "Merchant Onboarding",
+              "fill": "#212429ff",
+              "content": "Image Title",
+              "fontFamily": "Inter",
+              "fontSize": 24,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "mdsnG",
+              "name": "Frame 1984080518",
+              "fill": "#d14e28ff",
+              "cornerRadius": 5,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1
+              },
+              "gap": 10,
+              "padding": [
+                10,
+                15
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "path",
+                  "id": "aA1zU",
+                  "name": "Vector",
+                  "rotation": -90,
+                  "geometry": "M13.26289 5.82789c0.14505 0.13607 0.23012 0.32418 0.2365 0.52296 0.00638 0.19878-0.06646 0.39196-0.2025 0.53704l-5.797 0 0 8.862c0 0.19891-0.07902 0.38968-0.21968 0.53033-0.14065 0.14065-0.33142 0.21967-0.53032 0.21967-0.19891 0-0.38968-0.07902-0.53033-0.21967-0.14065-0.14065-0.21967-0.33142-0.21967-0.53033l0-8.862-5.797 0c-0.13604-0.14508-0.20888-0.33826-0.2025-0.53704 0.00638-0.19878 0.09145-0.38689 0.2365-0.52296l6-5.625c0.13901-0.13035 0.32243-0.20289 0.513-0.20289 0.19057 0 0.37399 0.07254 0.51299 0.20289l6.00001 5.625z",
+                  "fill": "#ffffffff",
+                  "width": 30,
+                  "height": 37,
+                  "stroke": {
+                    "align": "inside",
+                    "thickness": 1.3333333730697632
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
