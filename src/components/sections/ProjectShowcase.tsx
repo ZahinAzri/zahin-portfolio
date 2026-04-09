@@ -1,8 +1,9 @@
 "use client";
 
-import React, { useEffect } from 'react';
-import { motion } from 'framer-motion';
-import { ArrowLeft } from 'lucide-react';
+import React, { useEffect, useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowLeft, X } from 'lucide-react';
+import { ImageCard } from '@/components/ui/image-card';
 
 interface ProjectShowcaseProps {
     isOpen: boolean;
@@ -10,6 +11,14 @@ interface ProjectShowcaseProps {
 }
 
 export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
+    const [selectedDesignIndex, setSelectedDesignIndex] = useState<number | null>(null);
+
+    const wireframes = [
+        { title: "Merchant Onboarding", src: "/assets/images/Pcari/Merchant Onboarding.jpg" },
+        { title: "Merchant Menu Management", src: "/assets/images/Pcari/Merchant Menu Management.jpg" },
+        { title: "Merchant Promotion Management", src: "/assets/images/Pcari/Merchant Promotion Management.jpg" },
+        { title: "Merchant & Customer Interaction", src: "/assets/images/Pcari/Merchant & Customer Interaction.jpg" }
+    ];
 
     // Lock body scroll when open
     useEffect(() => {
@@ -73,7 +82,7 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                     <div className="relative aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 mb-16">
                         {/* Placeholder for Hero Image - using the card image for now */}
                         <img
-                            src="/images/pcari booking.jpg"
+                            src="/assets/images/pcari booking.jpg"
                             alt="Pcari Booking"
                             className="w-full h-full object-cover"
                         />
@@ -146,41 +155,24 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                     <div className="mb-16">
                         <h3 className="text-center text-sm text-white uppercase tracking-widest mb-12">Wireframes & High Fidelity Prototypes</h3>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                            {/* Placeholders for wireframes */}
-                            <div className="aspect-[1] bg-[#212529] rounded-xl overflow-hidden">
-                                <img
-                                    src="/images/Merchant Onboarding.jpg"
-                                    alt="Merchant Onboarding"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                            <div className="aspect-[1] bg-[#212529] rounded-xl overflow-hidden">
-                                <img
-                                    src="/images/Merchant Menu Management.jpg"
-                                    alt="Merchant Menu Management"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                            <div className="aspect-[1] bg-[#212529] rounded-xl overflow-hidden">
-                                <img
-                                    src="/images/Merchant Promotion Management.jpg"
-                                    alt="Merchant Promotion Management"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
-                            <div className="aspect-[1] bg-[#212529] rounded-xl overflow-hidden">
-                                <img
-                                    src="/images/Merchant & Customer Interaction.jpg"
-                                    alt="Merchant Customer Interaction"
-                                    className="w-full h-full object-contain"
-                                />
-                            </div>
+                            {wireframes.map((wf, index) => (
+                                <div
+                                    key={index}
+                                    className="aspect-[1] bg-[#212529] rounded-xl overflow-hidden cursor-pointer hover:opacity-80 transition-opacity"
+                                    onClick={() => setSelectedDesignIndex(index)}
+                                >
+                                    <img
+                                        src={wf.src}
+                                        alt={wf.title}
+                                        className="w-full h-full object-contain pointer-events-none"
+                                    />
+                                </div>
+                            ))}
                         </div>
                         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-4 text-center text-m text-white">
-                            <p>Merchant Onboarding</p>
-                            <p>Merchant Menu Management</p>
-                            <p>Merchant Promotion Management</p>
-                            <p>Merchant & Customer Interaction</p>
+                            {wireframes.map((wf, index) => (
+                                <p key={index}>{wf.title}</p>
+                            ))}
                         </div>
                     </div>
 
@@ -211,28 +203,28 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                                 {/* Placeholders for High Fi Screens */}
                                 <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Booking Homepage.png"
+                                        src="/assets/images/Pcari/Booking Homepage.png"
                                         alt="Booking Homepage"
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
                                 <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Order Process - Menus.png"
+                                        src="/assets/images/Pcari/Order Process - Menus.png"
                                         alt="Order Process Menu"
                                         className="w-full h-full object-contain"
                                     />
-                                </div><
-                                    div className="aspect-[9/19] overflow-hidden">
+                                </div>
+                                <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Order Process - Menu Options.png"
+                                        src="/assets/images/Pcari/Order Process - Menu Options.png"
                                         alt="Booking Homepage"
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
                                 <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Order Process - Service Selection.png"
+                                        src="/assets/images/Pcari/Order Process - Service Selection.png"
                                         alt="Booking Homepage"
                                         className="w-full h-full object-contain"
                                     />
@@ -255,33 +247,33 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                         </p>
 
                         <div className="bg-[#1C1C1E] rounded-2xl p-8 border border-white/5">
-                            <p className="text-center text-sm text-gray-500 mb-8 uppercase tracking-widest">System Design</p>
+                            <p className="text-center text-sm text-white mb-8 uppercase tracking-widest">System Design</p>
                             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
                                 {/* Placeholders for High Fi Screens */}
                                 <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Merchant Dashboard.png"
+                                        src="/assets/images/Pcari/Merchant Dashboard.png"
                                         alt="Booking Homepage"
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
                                 <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Dine In Order.png"
+                                        src="/assets/images/Pcari/Dine In Order.png"
                                         alt="Order Process Menu"
                                         className="w-full h-full object-contain"
                                     />
                                 </div><
                                     div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Pickup Order.png"
+                                        src="/assets/images/Pcari/Pickup Order.png"
                                         alt="Booking Homepage"
                                         className="w-full h-full object-contain"
                                     />
                                 </div>
                                 <div className="aspect-[9/19] overflow-hidden">
                                     {/* <img src="..." className="w-full h-full object-cover" /> */}<img
-                                        src="/images/Pickup Ongoing.png"
+                                        src="/assets/images/Pcari/Pickup Ongoing.png"
                                         alt="Booking Homepage"
                                         className="w-full h-full object-contain"
                                     />
@@ -298,6 +290,29 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
 
                 </div>
             </div>
+
+            <AnimatePresence>
+                {selectedDesignIndex !== null && (
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="fixed inset-0 z-[200] flex items-center justify-center bg-black/90 backdrop-blur-md p-4"
+                        onClick={() => setSelectedDesignIndex(null)}
+                    >
+                        <div onClick={(e) => e.stopPropagation()}>
+                            <ImageCard
+                                onClose={() => setSelectedDesignIndex(null)}
+                                title={wireframes[selectedDesignIndex].title}
+                                imageUrl={wireframes[selectedDesignIndex].src}
+                                onPrev={() => setSelectedDesignIndex(prev => prev === 0 ? wireframes.length - 1 : (prev! - 1))}
+                                onNext={() => setSelectedDesignIndex(prev => prev === wireframes.length - 1 ? 0 : (prev! + 1))}
+                            />
+                        </div>
+                    </motion.div>
+                )}
+            </AnimatePresence>
+
         </motion.div >
     );
 }

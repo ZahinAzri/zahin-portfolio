@@ -7,7 +7,7 @@ import ClientWrapper from "@/components/ClientWrapper";
 import { Navbar } from "@/components/layout/Navbar";
 
 const dotSpot = localFont({
-    src: "../../public/fonts/DotSpot-Regular.woff2",
+    src: "../../public/assets/font/DotSpot-Regular.woff2",
     variable: "--font-dotspot",
 });
 
