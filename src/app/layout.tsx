@@ -12,7 +12,7 @@ const dotSpot = localFont({
 });
 
 export const metadata: Metadata = {
-    title: "Zahin Azri - UI/UX Designer",
+    title: "Zahin Azri – UI/UX Designer",
     description: "Portfolio of Zahin Azri",
 };
 
