@@ -216,14 +216,14 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                                     <div className="p-[25px] border-r border-[#383635]">
                                         <div className="flex justify-between items-center mb-5">
                                             <h4 className="text-[20px] font-normal text-white">Admin Homepage</h4>
-                                            <span className="px-[15px] py-[10px] rounded-full text-[16px] font-normal bg-[#312726] text-[#605c56] border border-[#cc9d96]">Original</span>
+                                            <span className="px-[15px] py-[4px] rounded-full text-[16px] font-normal leading-[22px] bg-[#312726] text-[#605c56] border border-[#cc9d96]">Original</span>
                                         </div>
                                         <div className="aspect-[1.78] bg-[#111] rounded-lg border border-white/5 flex items-center justify-center text-white/5">Screenshot</div>
                                     </div>
                                     <div className="p-[25px]">
                                         <div className="flex justify-between items-center mb-5">
                                             <h4 className="text-[20px] font-normal text-white">Admin Homepage</h4>
-                                            <span className="px-[15px] py-[10px] rounded-full text-[16px] font-bold bg-[#413838] bg-clip-text text-transparent bg-gradient-to-r from-[#b5d3e9] to-[#cc9d96] border border-[#b5d3e9]">Revamped</span>
+                                            <span className="px-[15px] py-[4px] rounded-full text-[16px] font-bold leading-[22px] bg-[#413838] bg-clip-text text-transparent bg-gradient-to-r from-[#b5d3e9] to-[#cc9d96] border border-[#b5d3e9]">Revamped</span>
                                         </div>
                                         <div className="aspect-[1.28] bg-[#111] rounded-lg border border-white/5 flex items-center justify-center text-white/5">Screenshot</div>
                                     </div>
@@ -232,17 +232,17 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                                     <div className="p-[25px] border-r border-[#383635] flex flex-col justify-center">
                                         <p className="text-[20px] text-white leading-[25px] mb-6">The original admin landing page suffered from "Empty Space Syndrome." While it used large charts, they provided very little actionable data. There was no way to track daily or monthly growth trends, and the layout forced administrators to jump between different pages to get a complete picture of the system's health</p>
                                         <div className="flex flex-wrap gap-[10px]">
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Oversized Data Visuals</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Limited Metric Overview</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Lack of Historical Context</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Oversized Data Visuals</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Limited Metric Overview</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Lack of Historical Context</span>
                                         </div>
                                     </div>
                                     <div className="p-[25px] flex flex-col justify-center">
                                         <p className="text-[20px] text-white leading-[25px] mb-6">Rebuilt with a modular information hierarchy to handle high-volume data streams. The new layout introduces layered analytics and system-wide health indicators that scale across different admin roles, providing a comprehensive snapshot of platform performance without the cognitive load of the previous design</p>
                                         <div className="flex flex-wrap gap-[10px]">
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Multi-Series Analytics</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Comparative Growth Stats</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Account Health Gauges</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Multi-Series Analytics</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Comparative Growth Stats</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Account Health Gauges</span>
                                         </div>
                                     </div>
                                 </div>
@@ -254,14 +254,14 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                                     <div className="p-[25px] border-r border-[#383635]">
                                         <div className="flex justify-between items-center mb-5">
                                             <h4 className="text-[20px] font-normal text-white">Application Page</h4>
-                                            <span className="px-[15px] py-[10px] rounded-full text-[16px] font-normal bg-[#312726] text-[#605c56] border border-[#cc9d96]">Original</span>
+                                            <span className="px-[15px] py-[4px] rounded-full text-[16px] font-normal leading-[22px] bg-[#312726] text-[#605c56] border border-[#cc9d96]">Original</span>
                                         </div>
                                         <div className="aspect-[1.78] bg-[#111] rounded-lg border border-white/5 flex items-center justify-center text-white/5">Screenshot</div>
                                     </div>
                                     <div className="p-[25px]">
                                         <div className="flex justify-between items-center mb-5">
                                             <h4 className="text-[20px] font-normal text-white">Application Page</h4>
-                                            <span className="px-[15px] py-[10px] rounded-full text-[16px] font-bold bg-[#413838] bg-clip-text text-transparent bg-gradient-to-r from-[#b5d3e9] to-[#cc9d96] border border-[#b5d3e9]">Revamped</span>
+                                            <span className="px-[15px] py-[4px] rounded-full text-[16px] font-bold leading-[22px] bg-[#413838] bg-clip-text text-transparent bg-gradient-to-r from-[#b5d3e9] to-[#cc9d96] border border-[#b5d3e9]">Revamped</span>
                                         </div>
                                         <div className="aspect-[1.28] bg-[#111] rounded-lg border border-white/5 flex items-center justify-center text-white/5">Screenshot</div>
                                     </div>
@@ -270,17 +270,17 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                                     <div className="p-[25px] border-r border-[#383635] flex flex-col justify-center">
                                         <p className="text-[20px] text-white leading-[25px] mb-6">The original layout treated data as final output rather than a starting point. Summary metrics were static, forcing users to manually search or filter the table to find specific application statuses, leading to a fragmented workflow.</p>
                                         <div className="flex flex-wrap gap-[10px]">
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Static Data Display</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Wasted White Space</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Disconnected Context</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Static Data Display</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Wasted White Space</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Disconnected Context</span>
                                         </div>
                                     </div>
                                     <div className="p-[25px] flex flex-col justify-center">
                                         <p className="text-[20px] text-white leading-[25px] mb-6">The new architecture introduces a "Filter-by-Metric" system. The summary cards now double as global filters, allowing admins to instantly drill down into 'Pending' or 'Rejected' cases with a single click, reducing time-on-task by roughly 40%.</p>
                                         <div className="flex flex-wrap gap-[10px]">
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Interactive Status Filter</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Compact Data Grid</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Visual Trend Metrics</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Interactive Status Filter</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Compact Data Grid</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Visual Trend Metrics</span>
                                         </div>
                                     </div>
                                 </div>
@@ -292,14 +292,14 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                                     <div className="p-[25px] border-r border-[#383635]">
                                         <div className="flex justify-between items-center mb-5">
                                             <h4 className="text-[20px] font-normal text-white">User's Homepage</h4>
-                                            <span className="px-[15px] py-[10px] rounded-full text-[16px] font-normal bg-[#312726] text-[#605c56] border border-[#cc9d96]">Original</span>
+                                            <span className="px-[15px] py-[4px] rounded-full text-[16px] font-normal leading-[22px] bg-[#312726] text-[#605c56] border border-[#cc9d96]">Original</span>
                                         </div>
                                         <div className="aspect-[1.78] bg-[#111] rounded-lg border border-white/5 flex items-center justify-center text-white/5">Screenshot</div>
                                     </div>
                                     <div className="p-[25px]">
                                         <div className="flex justify-between items-center mb-5">
                                             <h4 className="text-[20px] font-normal text-white">User's Homepage</h4>
-                                            <span className="px-[15px] py-[10px] rounded-full text-[16px] font-bold bg-[#413838] bg-clip-text text-transparent bg-gradient-to-r from-[#b5d3e9] to-[#cc9d96] border border-[#b5d3e9]">Revamped</span>
+                                            <span className="px-[15px] py-[4px] rounded-full text-[16px] font-bold leading-[22px] bg-[#413838] bg-clip-text text-transparent bg-gradient-to-r from-[#b5d3e9] to-[#cc9d96] border border-[#b5d3e9]">Revamped</span>
                                         </div>
                                         <div className="aspect-[1.28] bg-[#111] rounded-lg border border-white/5 flex items-center justify-center text-white/5">Screenshot</div>
                                     </div>
@@ -308,17 +308,17 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                                     <div className="p-[25px] border-r border-[#383635] flex flex-col justify-center">
                                         <p className="text-[20px] text-white leading-[25px] mb-6">The original homepage was purely functional but lacked user engagement. The layout felt like a static directory rather than a lifestyle application, with a generic card display and a long, unorganized list of partners that made discovering benefits difficult for the user.</p>
                                         <div className="flex flex-wrap gap-[10px]">
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Plain Visual Identity</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Linear List Fatigue</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Underutilised White Space</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Plain Visual Identity</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Linear List Fatigue</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#211818] text-[#b23b3b] border border-[#b23b3b]">Underutilised White Space</span>
                                         </div>
                                     </div>
                                     <div className="p-[25px] flex flex-col justify-center">
                                         <p className="text-[20px] text-white leading-[25px] mb-6">The revamped interface transforms the homepage into a discovery-led portal. By introducing promotional banners and categorizing "Rakan Strategik" into intuitive groups, users can now easily find relevant discounts. The digital card also received a visual overhaul to feel more like a premium membership asset</p>
                                         <div className="flex flex-wrap gap-[10px]">
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Strategic Ad Placement</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Elevated Brand Identity</span>
-                                            <span className="px-[25px] py-[15px] rounded-full text-[16px] font-bold bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Categorised Discovery</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Strategic Ad Placement</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Elevated Brand Identity</span>
+                                            <span className="px-[18px] py-[8px] rounded-full text-[16px] font-bold leading-[22px] bg-[#1a2118] text-[#3bb260] border border-[#3bb260]">Categorised Discovery</span>
                                         </div>
                                     </div>
                                 </div>
