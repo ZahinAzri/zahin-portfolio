@@ -80,9 +80,8 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
 
                     {/* Hero Image */}
                     <div className="relative aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 mb-16">
-                        {/* Placeholder for Hero Image - using the card image for now */}
                         <img
-                            src="/assets/images/pcari booking.jpg"
+                            src="/assets/images/pcari/pcari booking.jpg"
                             alt="Pcari Booking"
                             className="w-full h-full object-cover"
                         />

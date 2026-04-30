@@ -41,6 +41,7 @@
     --animate-pulse-core: pulse-core 4s ease-in-out infinite;
 
     --font-sans: Satoshi, sans-serif;
+    --font-rounded: 'Rounded Mplus 1c', sans-serif;
     --font-noxlock: Noxlock, sans-serif;
     --font-dotspot: var(--font-dotspot), sans-serif;
 

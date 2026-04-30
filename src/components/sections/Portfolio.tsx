@@ -4,6 +4,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { CursorSVG } from '@/components/ui/CursorSVG';
 import { AnimatePresence } from 'framer-motion';
 import { ProjectShowcase } from './ProjectShowcase';
+import { MadaniShowcase } from './MadaniShowcase';
 
 export function Portfolio() {
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
@@ -76,6 +77,12 @@ export function Portfolio() {
                         onClose={() => setSelectedProject(null)}
                     />
                 )}
+                {selectedProject === 'madani' && (
+                    <MadaniShowcase
+                        isOpen={true}
+                        onClose={() => setSelectedProject(null)}
+                    />
+                )}
             </AnimatePresence>
 
             {/* Custom Cursor */}
@@ -98,10 +105,9 @@ export function Portfolio() {
                         onMouseLeave={() => setIsHovering(false)}
                         className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] border border-white/5 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none pointer-events-auto"
                     >
-                        <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none">
-                            {/* Optimistically pointing to where I will put images */}
-                            <img src="/assets/images/pcari booking.jpg" alt="Pcari Booking Mockup"
-                                className="w-full h-auto" />
+                        <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none aspect-square">
+                            <img src="/assets/images/pcari/pcari booking.jpg" alt="Pcari Booking Mockup"
+                                className="w-full h-full object-cover" />
                         </div>
                         <h3 className="text-2xl font-medium px-2">Pcari Booking</h3>
                         <p className="mt-2 text-gray-400 font-light px-2">Manage Pcari bookings for a merchant, which
@@ -117,17 +123,18 @@ export function Portfolio() {
                         </div>
                     </div>
                     {/* Project Card 2 */}
-                    <a href="#"
+                    <div
+                        onClick={() => setSelectedProject('madani')}
                         onMouseEnter={() => setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
-                        className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none">
-                        <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none">
-                            <img src="/assets/images/kad-pekerja-madani.png" alt="Card Project Mockup"
-                                className="w-full h-auto" />
+                        className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none pointer-events-auto border border-white/5 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]">
+                        <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none aspect-square">
+                            <img src="/assets/images/Kad_Pekerja_Madani/Hero.png" alt="Card Project Mockup"
+                                className="w-full h-full object-cover" />
                         </div>
                         <h3 className="text-2xl font-medium px-2">Kad Pekerja Madani</h3>
-                        <p className="mt-2 text-gray-400 font-light px-2">Redesign the website for Kad Pekerja Madani,
-                            along with a new design for the mobile application
+                        <p className="mt-2 text-gray-400 font-light px-2">
+                            A comprehensive redesign of a national digital discount card, leading the UI/UX strategy for both web and mobile platforms.
                         </p>
                         <div className="mt-4 flex items-center justify-between px-2">
                             <span className="text-[#D55A21] font-medium">View Case Study &rarr;</span>
@@ -140,7 +147,8 @@ export function Portfolio() {
                                 </span>
                             </div>
                         </div>
-                    </a>
+                    </div>
+
                 </div>
             </div>
         </section>

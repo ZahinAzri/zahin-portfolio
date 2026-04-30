@@ -7,7 +7,7 @@ import ClientWrapper from "@/components/ClientWrapper";
 import { Navbar } from "@/components/layout/Navbar";
 
 const dotSpot = localFont({
-    src: "../../public/assets/font/DotSpot-Regular.woff2",
+    src: "../../public/assets/fonts/DotSpot/DotSpot-Regular.woff2",
     variable: "--font-dotspot",
 });
 
@@ -25,8 +25,7 @@ export default function RootLayout({
         <html lang="en" className="dark scroll-smooth">
             <head>
                 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet" />
-                {/* Note: The user had this link, but 'Noxlock' might not be on Google Fonts. Keeping it to match legacy. */}
-                <link href="https://fonts.googleapis.com/css2?family=Noxlock&family=Rubik+Dots&display=swap" rel="stylesheet" />
+                <link href="https://fonts.googleapis.com/css2?family=Rounded+Mplus+1c:wght@700&family=Noxlock&family=Rubik+Dots&display=swap" rel="stylesheet" />
             </head>
             <body className={cn("bg-[#080808] text-white font-sans antialiased selection:bg-[#D55A21] selection:text-white", dotSpot.variable)}>
                 <ClientWrapper>
