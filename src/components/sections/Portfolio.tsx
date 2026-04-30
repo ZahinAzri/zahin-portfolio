@@ -2,7 +2,7 @@
 
 import React, { useRef, useState, useEffect } from 'react';
 import { CursorSVG } from '@/components/ui/CursorSVG';
-import { AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motion';
 import { ProjectShowcase } from './ProjectShowcase';
 import { MadaniShowcase } from './MadaniShowcase';
 
@@ -63,6 +63,12 @@ export function Portfolio() {
     }, [isHovering]);
 
     const [selectedProject, setSelectedProject] = useState<string | null>(null);
+    const [isTransitioning, setIsTransitioning] = useState(false);
+
+    const handleClose = () => {
+        setIsTransitioning(true);
+        setSelectedProject(null);
+    };
 
     // Note: Image paths need to be updated to /images/... if we moved assets.
     // Assuming we moved `_legacy/assets` to `public/assets` or better `public/images`.
@@ -70,17 +76,17 @@ export function Portfolio() {
 
     return (
         <section id="portfolio" data-scroll-section className="py-24 sm:py-32 relative">
-            <AnimatePresence>
+            <AnimatePresence onExitComplete={() => setIsTransitioning(false)}>
                 {selectedProject === 'pcari' && (
                     <ProjectShowcase
                         isOpen={true}
-                        onClose={() => setSelectedProject(null)}
+                        onClose={handleClose}
                     />
                 )}
                 {selectedProject === 'madani' && (
                     <MadaniShowcase
                         isOpen={true}
-                        onClose={() => setSelectedProject(null)}
+                        onClose={handleClose}
                     />
                 )}
             </AnimatePresence>
@@ -99,16 +105,21 @@ export function Portfolio() {
                 <p className="mt-4 text-lg text-gray-400">Projects I have participated thus far</p>
                 <div className="mt-16 grid grid-cols-1 md:grid-cols-2 gap-10">
                     {/* Project Card 1 */}
-                    <div
-                        onClick={() => setSelectedProject('pcari')}
-                        onMouseEnter={() => setIsHovering(true)}
+                    <motion.div
+                        layoutId="pcari-card"
+                        onClick={() => !isTransitioning && setSelectedProject('pcari')}
+                        onMouseEnter={() => !selectedProject && !isTransitioning && setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
-                        className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] border border-white/5 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none pointer-events-auto"
+                        whileHover={!selectedProject && !isTransitioning ? { scale: 1.02 } : {}}
+                        className={`project-card block bg-[#121722] rounded-[25px] text-left shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] border border-white/5 p-4 pointer-events-auto overflow-hidden transition-shadow duration-300 ${!selectedProject && !isTransitioning ? 'cursor-none hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)]' : 'cursor-default'}`}
                     >
-                        <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none aspect-square">
+                        <motion.div 
+                            layoutId="pcari-image"
+                            className="bg-zinc-900 rounded-[20px] overflow-hidden mb-6 pointer-events-none aspect-square"
+                        >
                             <img src="/assets/images/pcari/pcari booking.jpg" alt="Pcari Booking Mockup"
                                 className="w-full h-full object-cover" />
-                        </div>
+                        </motion.div>
                         <h3 className="text-2xl font-medium px-2">Pcari Booking</h3>
                         <p className="mt-2 text-gray-400 font-light px-2">Manage Pcari bookings for a merchant, which
                             includes the main page and the merchant's dashboard.</p>
@@ -121,17 +132,23 @@ export function Portfolio() {
 
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
                     {/* Project Card 2 */}
-                    <div
-                        onClick={() => setSelectedProject('madani')}
-                        onMouseEnter={() => setIsHovering(true)}
+                    <motion.div
+                        layoutId="madani-card"
+                        onClick={() => !isTransitioning && setSelectedProject('madani')}
+                        onMouseEnter={() => !selectedProject && !isTransitioning && setIsHovering(true)}
                         onMouseLeave={() => setIsHovering(false)}
-                        className="project-card block bg-[#121722] rounded-[15px] text-left transition-all duration-300 md:hover:scale-105 md:hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)] p-4 cursor-none pointer-events-auto border border-white/5 shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)]">
-                        <div className="bg-zinc-900 rounded-[10px] overflow-hidden mb-6 pointer-events-none aspect-square">
+                        whileHover={!selectedProject && !isTransitioning ? { scale: 1.02 } : {}}
+                        className={`project-card block bg-[#121722] rounded-[25px] text-left shadow-[0_10px_40px_-10px_rgba(0,0,0,0.5)] border border-white/5 p-4 pointer-events-auto overflow-hidden transition-shadow duration-300 ${!selectedProject && !isTransitioning ? 'cursor-none hover:shadow-[0_25px_60px_-15px_rgba(213,90,33,0.3)]' : 'cursor-default'}`}
+                    >
+                        <motion.div 
+                            layoutId="madani-image"
+                            className="bg-zinc-900 rounded-[20px] overflow-hidden mb-6 pointer-events-none aspect-square"
+                        >
                             <img src="/assets/images/Kad_Pekerja_Madani/Hero.png" alt="Card Project Mockup"
                                 className="w-full h-full object-cover" />
-                        </div>
+                        </motion.div>
                         <h3 className="text-2xl font-medium px-2">Kad Pekerja Madani</h3>
                         <p className="mt-2 text-gray-400 font-light px-2">
                             A comprehensive redesign of a national digital discount card, leading the UI/UX strategy for both web and mobile platforms.
@@ -147,7 +164,7 @@ export function Portfolio() {
                                 </span>
                             </div>
                         </div>
-                    </div>
+                    </motion.div>
 
                 </div>
             </div>

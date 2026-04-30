@@ -37,15 +37,18 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
 
     return (
         <motion.div
-            initial={{ y: '100%' }}
-            animate={{ y: isOpen ? '0%' : '100%' }}
-            exit={{ y: '100%' }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[100] bg-[#0A0A0A] overflow-y-auto overscroll-contain"
+            layoutId="pcari-card"
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+            className="fixed inset-0 z-[100] bg-[#0A0A0A] rounded-none overflow-y-auto overscroll-contain"
             data-lenis-prevent
         >
             {/* Floating Nav Header */}
-            <div className="fixed top-8 left-0 right-0 flex justify-center z-50 pointer-events-none">
+            <motion.div 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="fixed top-8 left-0 right-0 flex justify-center z-50 pointer-events-none"
+            >
                 <div className="bg-[#1C1C1E] rounded-full px-2 py-2 flex items-center shadow-lg pointer-events-auto border border-white/5">
                     <button
                         onClick={onClose}
@@ -58,13 +61,19 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                         Project Showcase
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Content Container */}
-            <div className="min-h-screen pb-32">
+            <div className="min-h-screen pb-32 relative z-10">
                 {/* Hero Section */}
                 <div className="relative pt-32 pb-16 px-6 md:px-12 max-w-7xl mx-auto">
-                    <div className="mb-12">
+                    {/* Hero Text */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
+                        className="mb-12"
+                    >
                         <div className="flex items-center gap-4 text-sm text-gray-500 mb-6">
                             <button onClick={onClose} className="hover:text-white transition-colors cursor-pointer">Portfolio</button>
                             <span className="text-white/50">/</span>
@@ -76,20 +85,32 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                         <p className="text-xl md:text-2xl text-gray-400 max-w-3xl leading-relaxed">
                             Collaborated with the UX/UI team to conduct detailed research on profit margin and expenses based on current market trends, creating data visualizations.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    {/* Hero Image */}
-                    <div className="relative aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 mb-16">
-                        <img
+                    {/* Hero Image (ALWAYS VISIBLE for Morph) */}
+                    <motion.div 
+                        layoutId="pcari-image"
+                        className="relative aspect-video rounded-3xl overflow-hidden bg-zinc-900 border border-white/5 mb-16"
+                    >
+                        <motion.img
                             src="/assets/images/pcari/pcari booking.jpg"
                             alt="Pcari Booking"
                             className="w-full h-full object-cover"
+                            initial={{ scale: 1.15, y: 30 }}
+                            animate={{ scale: 1, y: 0 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.05 }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-50"></div>
-                    </div>
+                    </motion.div>
 
-                    {/* Project Stats Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-t border-white/10 border-b mb-24">
+                    {/* Rest of Content (Staggered Fade) */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+                    >
+                        {/* Project Stats Grid */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-t border-white/10 border-b mb-24">
                         <div>
                             <h3 className="text-gray-500 text-xm font-medium mb-2">My Role</h3>
                             <p className="text-white text-lg font-medium">Intern UI/UX Designer</p>
@@ -287,10 +308,11 @@ export function ProjectShowcase({ isOpen, onClose }: ProjectShowcaseProps) {
                         </div>
                     </div>
 
+                    </motion.div>
                 </div>
             </div>
 
-            <AnimatePresence>
+        <AnimatePresence>
                 {selectedDesignIndex !== null && (
                     <motion.div
                         initial={{ opacity: 0 }}

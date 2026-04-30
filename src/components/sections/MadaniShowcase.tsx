@@ -36,15 +36,18 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
 
     return (
         <motion.div
-            initial={{ y: '100%' }}
-            animate={{ y: isOpen ? '0%' : '100%' }}
-            exit={{ y: '100%' }}
-            transition={{ type: "spring", damping: 25, stiffness: 200 }}
-            className="fixed inset-0 z-[100] bg-[#0A0A0A] overflow-y-auto overscroll-contain text-white font-sans"
+            layoutId="madani-card"
+            transition={{ type: "spring", stiffness: 400, damping: 30 }}
+            className="fixed inset-0 z-[100] bg-[#0A0A0A] rounded-none overflow-y-auto overscroll-contain text-white font-sans"
             data-lenis-prevent
         >
             {/* Floating Nav Header */}
-            <div className="fixed top-8 left-0 right-0 flex justify-center z-50 pointer-events-none">
+            <motion.div 
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.3 }}
+                className="fixed top-8 left-0 right-0 flex justify-center z-50 pointer-events-none"
+            >
                 <div className="bg-[#1C1C1E] rounded-full px-2 py-2 flex items-center shadow-lg pointer-events-auto border border-white/5">
                     <button
                         onClick={onClose}
@@ -57,13 +60,19 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                         Project Showcase
                     </div>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Content Container */}
-            <div className="min-h-screen pb-32">
+            <div className="min-h-screen pb-32 relative z-10">
                 {/* Hero Section */}
                 <div className="relative pt-32 pb-16 px-6 md:px-12 max-w-7xl mx-auto">
-                    <div className="mb-12">
+                    {/* Hero Text */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
+                        className="mb-12"
+                    >
                         <div className="flex items-center gap-4 text-[12px] text-[#676e7e] mb-6 font-normal">
                             <button onClick={onClose} className="hover:text-white transition-colors cursor-pointer">Portfolio</button>
                             <span className="text-[#676e7e]">/</span>
@@ -75,20 +84,32 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                         <p className="text-xl md:text-[24px] text-[#99a1af] max-w-3xl leading-relaxed font-normal">
                             A comprehensive redesign of a national digital discount card for union. I led the UI/UX strategy for the web portal and mobile application, focusing on simplifying repetitive, complex verification workflows and modernizing the overall user experience.
                         </p>
-                    </div>
+                    </motion.div>
 
-                    {/* Hero Image */}
-                    <div className="relative aspect-video rounded-[35px] overflow-hidden bg-[#1A1A1A] border border-white/5 mb-16">
-                        <img
+                    {/* Hero Image (ALWAYS VISIBLE for Morph) */}
+                    <motion.div 
+                        layoutId="madani-image"
+                        className="relative aspect-video rounded-[35px] overflow-hidden bg-[#1A1A1A] border border-white/5 mb-16"
+                    >
+                        <motion.img
                             src="/assets/images/Kad_Pekerja_Madani/Hero.png"
                             alt="Kad Pekerja Madani Hero"
                             className="w-full h-full object-cover"
+                            initial={{ scale: 1.15, y: 30 }}
+                            animate={{ scale: 1, y: 0 }}
+                            transition={{ type: "spring", stiffness: 400, damping: 30, delay: 0.05 }}
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-[#0A0A0A] via-transparent to-transparent opacity-50"></div>
-                    </div>
+                    </motion.div>
 
-                    {/* Project Stats Grid */}
-                    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-t border-white/10 border-b mb-24">
+                    {/* Rest of Content (Staggered Fade) */}
+                    <motion.div 
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ delay: 0.3, duration: 0.6, ease: "easeOut" }}
+                    >
+                        {/* Project Stats Grid */}
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-12 border-t border-white/10 border-b mb-24">
                         <div>
                             <h3 className="text-[#a8a8a8] text-[16px] font-normal mb-2">My role</h3>
                             <p className="text-white text-[16px] font-bold">UI/UX Designer</p>
@@ -172,8 +193,15 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                             </div>
                         </div>
                     </div>
+                    </motion.div>
                 </div>
 
+                {/* Rest of Page (FADES IN) */}
+                <motion.div 
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.4, duration: 0.6, ease: "easeOut" }}
+                >
                 {/* Visual System Section (Full Width) */}
                 <div className="relative mb-32 py-24 overflow-hidden w-full">
                     {/* Background Image */}
@@ -366,9 +394,10 @@ export function MadaniShowcase({ isOpen, onClose }: MadaniShowcaseProps) {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
+        </div>
 
-            <AnimatePresence>
+        <AnimatePresence>
                 {selectedDesignIndex !== null && (
                     <motion.div
                         initial={{ opacity: 0 }}
